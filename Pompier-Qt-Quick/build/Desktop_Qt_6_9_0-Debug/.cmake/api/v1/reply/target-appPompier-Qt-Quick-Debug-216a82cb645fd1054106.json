@@ -72,7 +72,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 14,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
@@ -96,19 +96,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 57,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 51,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 8,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
@@ -262,7 +262,7 @@
 			{
 				"command" : 14,
 				"file" : 1,
-				"line" : 19,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
@@ -897,7 +897,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				28,
+				27,
+				41,
 				42,
 				43,
 				44,
@@ -906,8 +907,7 @@
 				47,
 				48,
 				49,
-				50,
-				51
+				50
 			]
 		},
 		{
@@ -938,7 +938,7 @@
 				12,
 				14,
 				19,
-				27
+				26
 			]
 		},
 		{
@@ -951,14 +951,14 @@
 				22,
 				23,
 				24,
-				25,
-				26
+				25
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
+				28,
 				29,
 				30,
 				31,
@@ -970,8 +970,7 @@
 				37,
 				38,
 				39,
-				40,
-				41
+				40
 			]
 		}
 	],
@@ -1127,11 +1126,6 @@
 		{
 			"backtrace" : 89,
 			"path" : "ui/icons/clock.svg",
-			"sourceGroupIndex" : 3
-		},
-		{
-			"backtrace" : 89,
-			"path" : "ui/icons/ressource.qrc",
 			"sourceGroupIndex" : 3
 		},
 		{

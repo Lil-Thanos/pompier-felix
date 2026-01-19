@@ -43,7 +43,9 @@ set_target_properties(appPompier-Qt-Quick PROPERTIES
 
 # --- 4. Lier les bibliothèques Qt nécessaires ---
 target_link_libraries(appPompier-Qt-Quick
-    PRIVATE Qt6::Quick Qt6::QuickControls2
+    PRIVATE
+    Qt6::Quick
+    Qt6::QuickControls2
 )
 
 # --- 5. Installation (optionnel) ---

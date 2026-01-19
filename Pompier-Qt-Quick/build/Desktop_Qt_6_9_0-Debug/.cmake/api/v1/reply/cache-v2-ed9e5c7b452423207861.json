@@ -6734,6 +6734,18 @@
 			"value" : "/home/felix/Qt/6.9.0/gcc_64/bin/qmake"
 		},
 		{
+			"name" : "Qt65CompatGraphicalEffects_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt65CompatGraphicalEffects."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Qt65CompatGraphicalEffects_DIR-NOTFOUND"
+		},
+		{
 			"name" : "Qt6ConcurrentPrivate_DIR",
 			"properties" : 
 			[

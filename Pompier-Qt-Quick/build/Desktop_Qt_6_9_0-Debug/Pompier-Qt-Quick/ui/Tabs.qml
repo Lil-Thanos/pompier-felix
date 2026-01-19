@@ -2,39 +2,93 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 
-RowLayout {
+Rectangle {
     id: root
-    spacing: 8
-    height: 56
+    height: 64
+    color: "transparent"
     Layout.fillWidth: true
-    anchors.margins: 16
 
     property string activeTab
     signal tabChanged(string tab)
 
-    Repeater {
-        model: [
-            { label: "Nouvelle Intervention", value: "nouvelle" },
-            { label: "Alerte & Moyens", value: "alerte" },
-            { label: "Gestion des Renforts", value: "gestion" }
-        ]
+    RowLayout {
+        anchors.fill: parent
+        spacing: 8
 
-        delegate: Button {
-            text: modelData.label
-            font.pixelSize: 16
+        Repeater {
+            model: [
+                { label: "Nouvelle Intervention", value: "nouvelle", icon: "➕" },
+                { label: "Alerte & Moyens", value: "alerte", icon: "🚨" },
+                { label: "Gestion des Renforts", value: "gestion", icon: "👥" }
+            ]
 
-            // Couleur du texte
-            palette.text: "white"
+            delegate: Button {
+                id: tabButton
+                Layout.fillWidth: true
+                height: 48
 
-            background: Rectangle {
-                radius: 8
-                color: root.activeTab === modelData.value
-                       ? "#3b4a6b"
-                       : "#9ca3af"
-                Behavior on color { ColorAnimation { duration: 200 } }
+                property bool isActive: root.activeTab === modelData.value
+
+                background: Rectangle {
+                    radius: 10
+                    color: tabButton.isActive ? "#dc2626" : "#ffffff"
+                    border.color: tabButton.isActive ? "#dc2626" : "#e5e7eb"
+                    border.width: 2
+
+                    Behavior on color {
+                        ColorAnimation { duration: 200 }
+                    }
+
+                    // Effet hover
+                    Rectangle {
+                        anchors.fill: parent
+                        radius: parent.radius
+                        color: tabButton.hovered && !tabButton.isActive ? "#f3f4f6" : "transparent"
+
+                        Behavior on color {
+                            ColorAnimation { duration: 150 }
+                        }
+                    }
+                }
+
+                contentItem: RowLayout {
+                    spacing: 8
+
+                    Text {
+                        text: modelData.icon
+                        font.pixelSize: 20
+                    }
+
+                    Text {
+                        text: modelData.label
+                        font.pixelSize: 15
+                        font.bold: tabButton.isActive
+                        color: tabButton.isActive ? "white" : "#374151"
+                        Layout.alignment: Qt.AlignVCenter
+                    }
+
+                    // Badge (exemple pour notifications)
+                    Rectangle {
+                        visible: modelData.value === "alerte"
+                        width: 24
+                        height: 24
+                        radius: 12
+                        color: tabButton.isActive ? "#fee2e2" : "#dc2626"
+
+                        Text {
+                            anchors.centerIn: parent
+                            text: "3"
+                            font.pixelSize: 11
+                            font.bold: true
+                            color: tabButton.isActive ? "#dc2626" : "white"
+                        }
+                    }
+                }
+
+                onClicked: root.tabChanged(modelData.value)
             }
-
-            onClicked: root.tabChanged(modelData.value)
         }
+
+        Item { Layout.fillWidth: true }
     }
 }

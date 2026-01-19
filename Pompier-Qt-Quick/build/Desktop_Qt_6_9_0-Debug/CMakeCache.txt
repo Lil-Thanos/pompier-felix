@@ -340,6 +340,9 @@ QT_CREATOR_SOURCE_GROUPS:BOOL=ON
 //No help, variable specified on the command line.
 QT_QMAKE_EXECUTABLE:FILEPATH=/home/felix/Qt/6.9.0/gcc_64/bin/qmake
 
+//The directory containing a CMake configuration file for Qt65CompatGraphicalEffects.
+Qt65CompatGraphicalEffects_DIR:PATH=Qt65CompatGraphicalEffects_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for Qt6ConcurrentPrivate.
 Qt6ConcurrentPrivate_DIR:PATH=/home/felix/Qt/6.9.0/gcc_64/lib/cmake/Qt6ConcurrentPrivate
 

@@ -5,7 +5,7 @@
 		"commands" : 
 		[
 			"add_custom_target",
-			"_qt_internal_qml_copy_files_to_build_dir",
+			"_qt_internal_target_enable_qmllint",
 			"qt6_target_qml_sources",
 			"qt6_add_qml_module",
 			"qt_add_qml_module"
@@ -23,7 +23,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 19,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
@@ -41,23 +41,29 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 3471,
+				"line" : 3215,
 				"parent" : 3
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 2851,
+				"line" : 1499,
 				"parent" : 4
 			}
 		]
 	},
+	"dependencies" : 
+	[
+		{
+			"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df"
+		}
+	],
 	"folder" : 
 	{
-		"name" : "QtInternalTargets"
+		"name" : "QtInternalTargets/QmlLinter"
 	},
-	"id" : "appPompier-Qt-Quick_copy_res::@6890427a1f51a3e7e1df",
-	"name" : "appPompier-Qt-Quick_copy_res",
+	"id" : "appPompier-Qt-Quick_qmllint_json::@6890427a1f51a3e7e1df",
+	"name" : "appPompier-Qt-Quick_qmllint_json",
 	"paths" : 
 	{
 		"build" : ".",
@@ -76,8 +82,7 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -86,19 +91,13 @@
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_9_0-Debug/CMakeFiles/appPompier-Qt-Quick_copy_res",
+			"path" : "build/Desktop_Qt_6_9_0-Debug/CMakeFiles/appPompier-Qt-Quick_qmllint_json",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_9_0-Debug/CMakeFiles/appPompier-Qt-Quick_copy_res.rule",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_9_0-Debug/.qt/appPompier-Qt-Quick_res.txt.rule",
+			"path" : "build/Desktop_Qt_6_9_0-Debug/CMakeFiles/appPompier-Qt-Quick_qmllint_json.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
