@@ -129,10 +129,13 @@ Rectangle {
 
                 // Gravité
                 ColumnLayout {
+                    id: graviteLayout
                     Layout.fillWidth: true
                     Layout.leftMargin: 24
                     Layout.rightMargin: 24
                     spacing: 8
+
+                    property int selectedIndex: -1
 
                     Text {
                         text: "Niveau de Gravité *"
@@ -156,13 +159,14 @@ Rectangle {
                                 Layout.fillWidth: true
                                 height: 48
 
-                                property bool isSelected: index === 0
+                                property bool isSelected: index === graviteLayout.selectedIndex
 
                                 background: Rectangle {
                                     radius: 8
                                     color: parent.isSelected ? modelData.color : "white"
                                     border.color: modelData.color
                                     border.width: 2
+                                    Behavior on color { ColorAnimation { duration: 120 } }
                                 }
 
                                 contentItem: Text {
@@ -174,11 +178,14 @@ Rectangle {
                                     verticalAlignment: Text.AlignVCenter
                                 }
 
-                                onClicked: isSelected = true
+                                onClicked: {
+                                    graviteLayout.selectedIndex = (graviteLayout.selectedIndex === index) ? -1 : index
+                                }
                             }
                         }
                     }
                 }
+
 
                 // Victimes
                 ColumnLayout {

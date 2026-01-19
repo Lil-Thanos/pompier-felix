@@ -30,6 +30,7 @@ Rectangle {
             height: 48
             radius: 24
             color: "#ffffff"
+            visible: false
 
             Text {
                 anchors.centerIn: parent
@@ -119,6 +120,7 @@ Rectangle {
         // Icons
         RowLayout {
             spacing: 12
+            visible: false
 
             Button {
                 width: 40
@@ -127,6 +129,7 @@ Rectangle {
                 background: Rectangle {
                     radius: 20
                     color: parent.hovered ? "#991b1b" : "transparent"
+                    visible: false
 
                     Behavior on color {
                         ColorAnimation { duration: 150 }
@@ -144,10 +147,12 @@ Rectangle {
             Button {
                 width: 40
                 height: 40
+                visible: false
 
                 background: Rectangle {
                     radius: 20
                     color: parent.hovered ? "#991b1b" : "transparent"
+                    visible: false
 
                     Behavior on color {
                         ColorAnimation { duration: 150 }

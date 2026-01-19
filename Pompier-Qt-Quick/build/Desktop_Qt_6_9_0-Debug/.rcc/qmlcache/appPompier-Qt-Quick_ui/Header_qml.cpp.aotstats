@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 22
@@ -14,82 +14,82 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 27,
+                        "durationMicroseconds": 25,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 35
+                        "line": 36
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 22,
+                        "durationMicroseconds": 21,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 69
+                        "line": 70
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 32,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 38,
                         "errorMessage": "",
                         "functionName": "loops",
-                        "line": 80
+                        "line": 81
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 158,
                         "errorMessage": "",
                         "functionName": "text",
-                        "line": 105
+                        "line": 106
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 23,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 104
+                        "line": 105
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 171,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 114
+                        "line": 115
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 27,
+                        "durationMicroseconds": 24,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 129
+                        "line": 131
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 109,
                         "errorMessage": "Cannot access value for name Image",
                         "functionName": "fillMode",
-                        "line": 140
+                        "line": 143
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 17,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 150
+                        "line": 154
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 96,
+                        "durationMicroseconds": 91,
                         "errorMessage": "Cannot access value for name Image",
                         "functionName": "fillMode",
-                        "line": 161
+                        "line": 166
                     }
                 ],
                 "filepath": "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/Header.qml"
