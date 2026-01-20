@@ -1,0 +1,15 @@
+-rootPath
+/home/felix/Documents/projet/Pompier-Qt-Quick
+-cmake-output
+-output-file
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qt/qml_imports/appPompier_conf.cmake
+-importPath
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier
+-importPath
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug
+-importPath
+/home/felix/Qt/6.9.0/gcc_64/qml
+-qrcFiles
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/qmake_Pompier.qrc
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/appPompier_raw_qml_0.qrc
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/appPompier_raw_qml_0_extra_qmldirs.qrc

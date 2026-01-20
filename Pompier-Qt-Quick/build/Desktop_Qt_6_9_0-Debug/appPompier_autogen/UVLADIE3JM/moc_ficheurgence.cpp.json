@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "FicheUrgence",
+            "lineNumber": 10,
+            "object": true,
+            "qualifiedClassName": "FicheUrgence",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ficheurgence.h",
+    "outputRevision": 69
+}

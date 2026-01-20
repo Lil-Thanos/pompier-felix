@@ -1,0 +1,166 @@
+[
+    {
+        "classes": [
+            {
+                "className": "FicheUrgence",
+                "lineNumber": 10,
+                "object": true,
+                "qualifiedClassName": "FicheUrgence",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ficheurgence.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "Geocoding",
+                "lineNumber": 16,
+                "object": true,
+                "qualifiedClassName": "Geocoding",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "latitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "double"
+                            },
+                            {
+                                "name": "code_postal",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "coordonneesRecues",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "reply",
+                                "type": "QNetworkReply*"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "onGeocodingFinished",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "geocoding.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "SuperviseurOPE",
+                "lineNumber": 13,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "rue",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "getAdresse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "recalculerDistance",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "SuperviseurOPE",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "distance",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "distanceMinCalculee",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "messageInfo",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "lat",
+                                "type": "double"
+                            },
+                            {
+                                "name": "lon",
+                                "type": "double"
+                            },
+                            {
+                                "name": "code_postal",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "getLonLatGeocoding",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "name": "calculerDistanceMin",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "superviseurope.h",
+        "outputRevision": 69
+    }
+]

@@ -188,7 +188,7 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qtc/package-manager/auto-setup.cmake
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Pompier-Qt-Quick
+CMAKE_PROJECT_NAME:STATIC=PompierQtQuick
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1
@@ -324,6 +324,15 @@ Pompier-Qt-Quick_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Pompier-Qt-Quick_SOURCE_DIR:STATIC=/home/felix/Documents/projet/Pompier-Qt-Quick
 
+//Value Computed by CMake
+PompierQtQuick_BINARY_DIR:STATIC=/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug
+
+//Value Computed by CMake
+PompierQtQuick_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+PompierQtQuick_SOURCE_DIR:STATIC=/home/felix/Documents/projet/Pompier-Qt-Quick
+
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
 QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
@@ -453,6 +462,12 @@ Qt6QuickTools_DIR:PATH=/home/felix/Qt/6.9.0/gcc_64/lib/cmake/Qt6QuickTools
 
 //The directory containing a CMake configuration file for Qt6Quick.
 Qt6Quick_DIR:PATH=/home/felix/Qt/6.9.0/gcc_64/lib/cmake/Qt6Quick
+
+//The directory containing a CMake configuration file for Qt6SqlPrivate.
+Qt6SqlPrivate_DIR:PATH=/home/felix/Qt/6.9.0/gcc_64/lib/cmake/Qt6SqlPrivate
+
+//The directory containing a CMake configuration file for Qt6Sql.
+Qt6Sql_DIR:PATH=/home/felix/Qt/6.9.0/gcc_64/lib/cmake/Qt6Sql
 
 //The directory containing a CMake configuration file for Qt6.
 Qt6_DIR:PATH=/home/felix/Qt/6.9.0/gcc_64/lib/cmake/Qt6
@@ -1297,6 +1312,8 @@ QT_FEATURE_socks5:INTERNAL=ON
 QT_FEATURE_sortfilterproxymodel:INTERNAL=ON
 //Qt feature: sql (from target Qt6::Core)
 QT_FEATURE_sql:INTERNAL=ON
+//Qt feature: sqlmodel (from target Qt6::Sql)
+QT_FEATURE_sqlmodel:INTERNAL=ON
 //Qt feature: sse2 (from target Qt6::Core)
 QT_FEATURE_sse2:INTERNAL=ON
 //Qt feature: sse3 (from target Qt6::Core)

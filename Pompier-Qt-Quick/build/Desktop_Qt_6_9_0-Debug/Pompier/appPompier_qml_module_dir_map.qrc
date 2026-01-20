@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/Pompier">/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier</file>
+
+  </qresource>
+</RCC>

@@ -1,0 +1,164 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 24,
+                        "durationMicroseconds": 13,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: appWindow",
+                        "functionName": "activeTab",
+                        "line": 30
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: appWindow",
+                        "functionName": "onTabChanged",
+                        "line": 31
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 52
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 61
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 29,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot access value for name superviseur",
+                        "functionName": "target",
+                        "line": 98
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 21,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onDistanceMinCalculee",
+                        "line": 100
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 21,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onMessageInfo",
+                        "line": 104
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "model",
+                        "line": 122
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 124
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 43,
+                        "durationMicroseconds": 194,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 131
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 55,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 130
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 147
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 164
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 7,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 169
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 54,
+                        "durationMicroseconds": 117,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 172
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 52,
+                        "durationMicroseconds": 101,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 173
+                    }
+                ],
+                "filepath": "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/App.qml"
+            }
+        ],
+        "moduleId": "Pompier(appPompier)"
+    }
+]

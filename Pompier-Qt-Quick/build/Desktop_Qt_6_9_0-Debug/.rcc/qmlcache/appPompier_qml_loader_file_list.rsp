@@ -1,0 +1,11 @@
+--resource
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/qmake_Pompier.qrc
+--resource
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/appPompier_raw_qml_0.qrc
+--resource
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qt/rcc/appPompier_raw_qml_0_extra_qmldirs.qrc
+/qt/qml/Pompier/ui/App.qml
+/qt/qml/Pompier/ui/Header.qml
+/qt/qml/Pompier/ui/Tabs.qml
+/qt/qml/Pompier/ui/InterventionForm.qml
+/qt/qml/Pompier/ui/InfoCard.qml

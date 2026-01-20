@@ -1,0 +1,100 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 36
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 70
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 81
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 159,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 106
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 105
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 176,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 115
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 131
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 31,
+                        "durationMicroseconds": 117,
+                        "errorMessage": "Cannot access value for name Image",
+                        "functionName": "fillMode",
+                        "line": 143
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 154
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 31,
+                        "durationMicroseconds": 96,
+                        "errorMessage": "Cannot access value for name Image",
+                        "functionName": "fillMode",
+                        "line": 166
+                    }
+                ],
+                "filepath": "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/Header.qml"
+            }
+        ],
+        "moduleId": "Pompier(appPompier)"
+    }
+]

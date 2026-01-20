@@ -1,0 +1,9 @@
+module Pompier
+typeinfo appPompier.qmltypes
+prefer :/qt/qml/Pompier/
+App 1.0 ui/App.qml
+Header 1.0 ui/Header.qml
+Tabs 1.0 ui/Tabs.qml
+InterventionForm 1.0 ui/InterventionForm.qml
+InfoCard 1.0 ui/InfoCard.qml
+

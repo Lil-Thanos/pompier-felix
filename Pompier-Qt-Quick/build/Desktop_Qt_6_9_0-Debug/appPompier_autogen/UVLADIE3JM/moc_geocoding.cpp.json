@@ -1,0 +1,54 @@
+{
+    "classes": [
+        {
+            "className": "Geocoding",
+            "lineNumber": 16,
+            "object": true,
+            "qualifiedClassName": "Geocoding",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "latitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "code_postal",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "coordonneesRecues",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "reply",
+                            "type": "QNetworkReply*"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "onGeocodingFinished",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "geocoding.h",
+    "outputRevision": 69
+}

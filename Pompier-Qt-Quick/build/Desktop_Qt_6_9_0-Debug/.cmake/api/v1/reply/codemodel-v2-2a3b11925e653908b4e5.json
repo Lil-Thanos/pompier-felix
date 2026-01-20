@@ -1,0 +1,196 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-806878d1773a60118ae4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PompierQtQuick",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-4e7ae9ce05706d050c17.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-453583b4c04aa4669141.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-542321c3b681592cf1a9.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-c4cde8c333cb25c3acf8.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-8f195d2597752db89be6.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier-Debug-66809ab28b0f1c110034.json",
+					"name" : "appPompier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_autogen-Debug-e0db28b3183a607d7a65.json",
+					"name" : "appPompier_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_autogen_timestamp_deps-Debug-561238ab6e97049e0920.json",
+					"name" : "appPompier_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_copy_qml-Debug-a8fe3122321b814be9ff.json",
+					"name" : "appPompier_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_copy_res-Debug-9954feca09785e780460.json",
+					"name" : "appPompier_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_qmlimportscan-Debug-81fc8795e989c7a8be85.json",
+					"name" : "appPompier_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_qmllint-Debug-85d3cf46ab0982759f4a.json",
+					"name" : "appPompier_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_qmllint_json-Debug-dd11b0e3afb27e7fddf1.json",
+					"name" : "appPompier_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_qmllint_module-Debug-05c435bf9cf1ef1623b3.json",
+					"name" : "appPompier_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPompier_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPompier_qmltyperegistration-Debug-8ed0a9831007bc79897d.json",
+					"name" : "appPompier_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appPompier_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appPompier_aotstats_target-Debug-600083218bcd656fbbe3.json",
+					"name" : "module_appPompier_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug",
+		"source" : "/home/felix/Documents/projet/Pompier-Qt-Quick"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
