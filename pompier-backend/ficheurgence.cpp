@@ -44,7 +44,7 @@ QList<QMap<QString, QVariant>> FicheUrgence::recupererCasernesParDepartement(con
 {
     QList<QMap<QString, QVariant>> casernes;
 
-    QString queryStr = "SELECT * FROM casernes_tmp WHERE `addr:postcode` LIKE ?";
+    QString queryStr = "SELECT * FROM casernes_tmp WHERE operator LIKE '%?%';";
     QSqlQuery query(base);
 
     // Extraire les 2 premiers chiffres du code postal
@@ -58,6 +58,8 @@ QList<QMap<QString, QVariant>> FicheUrgence::recupererCasernesParDepartement(con
         return casernes;
     }
 
+    //@id,name,lat,lon,city,postcode,operator
+
     int count = 0;
     while (query.next()) {
         QMap<QString, QVariant> caserne;
@@ -65,8 +67,8 @@ QList<QMap<QString, QVariant>> FicheUrgence::recupererCasernesParDepartement(con
         caserne["name"] = query.value("name");
         caserne["lat"] = query.value("lat").toDouble();
         caserne["lon"] = query.value("lon").toDouble();
-        caserne["addr:city"] = query.value("addr:city");
-        caserne["addr:postcode"] = query.value("addr:postcode");
+        caserne["city"] = query.value("city");
+        caserne["postcode"] = query.value("postcode");
         caserne["operator"] = query.value("operator");
 
         casernes.append(caserne);
