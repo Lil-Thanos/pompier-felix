@@ -63,10 +63,10 @@ public:
         pushButton_adresse->setGeometry(QRect(610, 70, 80, 25));
         pushButton_minDist = new QPushButton(centralwidget);
         pushButton_minDist->setObjectName("pushButton_minDist");
-        pushButton_minDist->setGeometry(QRect(480, 400, 80, 25));
+        pushButton_minDist->setGeometry(QRect(510, 290, 80, 25));
         label_minDist = new QLabel(centralwidget);
         label_minDist->setObjectName("label_minDist");
-        label_minDist->setGeometry(QRect(150, 400, 241, 17));
+        label_minDist->setGeometry(QRect(40, 290, 381, 141));
         SuperviseurOPE->setCentralWidget(centralwidget);
         menubar = new QMenuBar(SuperviseurOPE);
         menubar->setObjectName("menubar");

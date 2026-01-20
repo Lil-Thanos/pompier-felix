@@ -24,12 +24,12 @@ private:
 public:
     FicheUrgence();
 
-    QList<QMap<QString, QVariant>>       recupererCasernesParDepartement(const QString &departement);
+    QList<QMap<QString, QVariant>>       recupererCasernesParDepartement(QString departement);
 
     void       connecterBDD();
     void       deconnecterBDD();
 
-    QString    calculerListCasernes(QList<QMap<QString, QVariant>> casernes);
+    QString    calculerListCasernes(QList<QMap<QString, QVariant>> casernes, double latSinistre, double lonSinistre);
 
     double     calculerHaversine(double longitude_s, double lattitude_s, double longitude_t, double lattitude_t);
 

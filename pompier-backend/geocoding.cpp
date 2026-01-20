@@ -53,10 +53,12 @@ void Geocoding::onGeocodingFinished(QNetworkReply *reply)
 
     double      lat         = jsonObject.value("lat").toString().toDouble();
     double      lon         = jsonObject.value("lon").toString().toDouble();
-    QString     code_postal = jsonObject.value("postcode").toString();
+
+    QJsonObject     address = jsonObject.value("address").toObject();
+    QString         code_postal = address.value("postcode").toString();
 
 
-    qDebug() << "Latitude:" << lat << ", Longitude:" << lon;
+    qDebug() << "Latitude:" << lat << ", Longitude:" << lon << ", code postal: " << code_postal;
 
     emit coordonneesRecues(lat, lon, code_postal);
     reply->deleteLater();

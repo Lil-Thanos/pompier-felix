@@ -95,8 +95,8 @@
    <widget class="QPushButton" name="pushButton_minDist">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>400</y>
+      <x>510</x>
+      <y>290</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -108,10 +108,10 @@
    <widget class="QLabel" name="label_minDist">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>400</y>
-      <width>241</width>
-      <height>17</height>
+      <x>40</x>
+      <y>290</y>
+      <width>381</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="text">

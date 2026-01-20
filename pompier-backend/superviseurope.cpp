@@ -44,7 +44,16 @@ void SuperviseurOPE::getLonLatGeocoding(double lat, double lon, QString code_pos
 
     creerFicheUrgence(lat, lon);
 
+    qDebug() << m_codepostal << ", " << code_postal;
+
     m_casernes = ficheUrgence->recupererCasernesParDepartement(m_codepostal);
+    qDebug() << "nombre de casernes :" << m_casernes.size();
+
+    if (!m_casernes.isEmpty()) {
+        calculerDistanceMin();
+    } else {
+        ui->label_minDist->setText("Aucune caserne trouvée");
+    }
 }
 
 void SuperviseurOPE::creerFicheUrgence(double latitude_sinistre, double longitude_sinistre)
@@ -82,8 +91,12 @@ void SuperviseurOPE::getAdresse() {
 
 void SuperviseurOPE::calculerDistanceMin()
 {
-    QString mindist = ficheUrgence->calculerListCasernes(m_casernes);
+    if (m_casernes.isEmpty()) {
+        ui->label_minDist->setText("Veuillez d'abord rechercher une adresse");
+        return;
+    }
 
+    QString mindist = ficheUrgence->calculerListCasernes(m_casernes, m_latitude, m_longitude);
     ui->label_minDist->setText(mindist);
 }
 
