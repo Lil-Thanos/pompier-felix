@@ -89,7 +89,7 @@
         "classes": [
             {
                 "className": "SuperviseurOPE",
-                "lineNumber": 13,
+                "lineNumber": 14,
                 "methods": [
                     {
                         "access": "public",
@@ -105,7 +105,71 @@
                     },
                     {
                         "access": "public",
+                        "arguments": [
+                            {
+                                "name": "type_intervention",
+                                "type": "QString"
+                            }
+                        ],
                         "index": 5,
+                        "name": "getType",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "niveau_gravite",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "getGravite",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nb_victime",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 7,
+                        "name": "getNbVictime",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "commentaire",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "name": "getCommentaire",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "date",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "heure",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "name": "getHeure",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
                         "name": "recalculerDistance",
                         "returnType": "void"
                     }

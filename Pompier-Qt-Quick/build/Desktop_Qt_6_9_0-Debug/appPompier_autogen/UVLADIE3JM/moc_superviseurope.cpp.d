@@ -2,6 +2,7 @@
   /home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/appPompier_autogen/moc_predefs.h \
   /home/felix/Documents/projet/Pompier-Qt-Quick/src/ficheurgence.h \
   /home/felix/Documents/projet/Pompier-Qt-Quick/src/geocoding.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QDateTime \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QDebug \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QFlags \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QIODevice \

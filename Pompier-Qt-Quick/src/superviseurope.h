@@ -6,6 +6,7 @@
 #include <QMap>
 #include <QVariant>
 #include <QDebug>
+#include <QDateTime>
 
 #include "src/ficheurgence.h"
 #include "src/geocoding.h"
@@ -23,7 +24,8 @@ public:
     Q_INVOKABLE void        getGravite(int niveau_gravite);
     Q_INVOKABLE void        getNbVictime(int nb_victime);
 
-    Q_INVOKABLE void        getCommentaire(QString commantaire);
+    Q_INVOKABLE void        getCommentaire(QString commentaire);
+    Q_INVOKABLE void        getHeure(QString date, QString heure);
 
     Q_INVOKABLE void        recalculerDistance();
 
@@ -34,7 +36,6 @@ signals:
 private slots:
     void        getLonLatGeocoding(double lat, double lon, QString code_postal);
     void        calculerDistanceMin();
-    void        creerFicheUrgence();
 
 private:
     FicheUrgence    *ficheUrgence = nullptr;
@@ -46,7 +47,10 @@ private:
     double          m_longitude  = 0.0;
     QString         m_codepostal;
 
-    QStringList         m_type_intervention;
+    QStringList     m_type_intervention;
+    QString         m_gravite;
+
+    QDateTime       m_dateHeure;
 
     void creerFicheUrgence(double latitude, double longitude);
 };

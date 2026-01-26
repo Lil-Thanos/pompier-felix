@@ -84,11 +84,21 @@ Rectangle {
 
                     ComboBox {
                         id: interventionType
-                        model: ["🔥 Incendie", "🚗 Accident", "🌊 Inondation", "🏥 Secours à personne"]
-                        currentIndex: 0
+                        model: [
+                            { label: "🔥 Incendie", value: "incendie" },
+                            { label: "🚗 Accident", value: "accident" },
+                            { label: "🌊 Inondation", value: "inondation" },
+                            { label: "🏥 Secours à personne", value: "secours_personne" }
+                        ]
+
+                        textRole: "label"
                         Layout.fillWidth: true
                         Layout.minimumHeight: 35
-                        font.pixelSize: 14
+
+                        // currentIndex: 0
+                        // Layout.fillWidth: true
+                        // Layout.minimumHeight: 35
+                        // font.pixelSize: 14
 
                         background: Rectangle {
                             radius: 8
@@ -202,17 +212,23 @@ Rectangle {
                         color: "#374151"
                     }
 
-                    SpinBox {
-                        from: 0
-                        to: 100
-                        value: 0
+                    TextField {
+                        id: nbVictimes
+                        placeholderText: "0"
+                        inputMethodHints: Qt.ImhDigitsOnly
+                        validator: IntValidator {
+                            bottom: 0
+                            top: 100
+                        }
+
                         Layout.fillWidth: true
                         font.pixelSize: 14
 
                         background: Rectangle {
                             radius: 8
-                            border.color: "#d1d5db"
+                            border.color: parent.activeFocus ? "#dc2626" : "#d1d5db"
                             border.width: 2
+                            color: parent.activeFocus ? "#fef2f2" : "white"
                         }
                     }
                 }
@@ -232,6 +248,7 @@ Rectangle {
                     }
 
                     TextArea {
+                        id: commentaireUrgence
                         placeholderText: "Décrivez la situation, les dangers potentiels, les accès..."
                         Layout.fillWidth: true
                         Layout.preferredHeight: 120
@@ -266,6 +283,7 @@ Rectangle {
                         }
 
                         TextField {
+                            id: dateHeure1
                             text: Qt.formatDate(new Date(), "dd/MM/yyyy")
                             Layout.fillWidth: true
                             font.pixelSize: 14
@@ -290,6 +308,7 @@ Rectangle {
                         }
 
                         TextField {
+                            id: dateHeure2
                             text: Qt.formatTime(new Date(), "HH:mm")
                             Layout.fillWidth: true
                             font.pixelSize: 14
@@ -362,6 +381,11 @@ Rectangle {
 
                         onClicked: {
                             superviseur.getAdresse(champsAdresse.text)
+                            superviseur.getType(interventionType.model[interventionType.currentIndex].value)
+                            superviseur.getGravite(graviteLayout.selectedIndex)
+                            superviseur.getNbVictime(nbVictimes.text)
+                            superviseur.getCommentaire(commentaireUrgence.text)
+                            superviseur.getHeure(dateHeure1.text, dateHeure2.text)
                         }
                     }
                 }

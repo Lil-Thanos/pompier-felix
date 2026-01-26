@@ -34,6 +34,7 @@ void SuperviseurOPE::getAdresse(QString rue)
 
 void SuperviseurOPE::getType(QString type_intervention)
 {
+    qDebug() << "Type intervention reçu :" << type_intervention;
 
     m_type_intervention << "incendie" << "accident" << "inondation" << "secoursPersone";
     // 1 = incendie
@@ -41,6 +42,50 @@ void SuperviseurOPE::getType(QString type_intervention)
     // 3 = inondation
     // 4 = secours à la personne
 
+}
+
+void SuperviseurOPE::getGravite(int niveau_gravite)
+{
+
+    //qDebug() << "Niveau de gravité reçu : " << niveau_gravite;
+    // Reçois deja une valeur entre -1 et 2
+
+    if (niveau_gravite == 0) m_gravite = "Urgence";
+
+    else if (niveau_gravite == 1) m_gravite = "Normal";
+
+    else if (niveau_gravite ==  2) m_gravite = "Faible";
+
+    qDebug() << "Niveau de gravité reçu : " <<  m_gravite;
+
+}
+
+void SuperviseurOPE::getNbVictime(int nb_victime)
+{
+
+    qDebug() << "Nombre de victime : " <<  nb_victime;
+
+}
+
+void SuperviseurOPE::getCommentaire(QString commentaire)
+{
+    qDebug() << "Commentaire lié à la fiche urgence : " <<  commentaire;
+
+}
+
+void SuperviseurOPE::getHeure(QString date, QString heure)
+{
+    m_dateHeure = QDateTime::fromString(
+        date + " " + heure,
+        "dd/MM/yyyy HH:mm"
+        );
+
+    if (!m_dateHeure.isValid()) {
+        qDebug() << "Date/heure invalide";
+        return;
+    }
+
+    qDebug() << "Date/heure valide :" << m_dateHeure;
 }
 
 void SuperviseurOPE::getLonLatGeocoding(double lat, double lon, QString code_postal)
@@ -72,7 +117,7 @@ void SuperviseurOPE::calculerDistanceMin()
         return;
     }
 
-    QString mindist = ficheUrgence->calculerListCasernes(m_casernes,m_latitude, m_longitude);
+    QString mindist = ficheUrgence->calculerListCasernes(m_casernes, m_latitude, m_longitude);
 
     emit distanceMinCalculee(mindist);
 }
