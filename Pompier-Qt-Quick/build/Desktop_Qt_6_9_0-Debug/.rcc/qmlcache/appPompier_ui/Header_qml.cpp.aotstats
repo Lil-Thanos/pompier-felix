@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 62,
+                        "durationMicroseconds": 82,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 22
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 26,
+                        "durationMicroseconds": 37,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 36
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 36,
+                        "durationMicroseconds": 48,
                         "errorMessage": "Cannot access value for name superviseur",
                         "functionName": "target",
                         "line": 68
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 165,
+                        "durationMicroseconds": 205,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 85
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 32,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 84
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 230,
                         "errorMessage": "",
                         "functionName": "onTriggered",
                         "line": 94
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 110
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 116,
+                        "durationMicroseconds": 151,
                         "errorMessage": "Cannot access value for name Image",
                         "functionName": "fillMode",
                         "line": 122
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 133
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 96,
+                        "durationMicroseconds": 131,
                         "errorMessage": "Cannot access value for name Image",
                         "functionName": "fillMode",
                         "line": 145

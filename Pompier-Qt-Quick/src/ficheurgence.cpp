@@ -137,9 +137,9 @@ QString FicheUrgence::calculerListCasernes(QList<QMap<QString, QVariant>> casern
     return casernePlusProche + "\n(" + QString::number(distanceMin, ' ', 2) + " km)";
 }
 
-void FicheUrgence::enregistrerIntervention(QString _adresse,QString _casernes_assigne, QString _type, QString _gravite, QString _date, QString _heure, int _victimes, QString _commentaire)
+void FicheUrgence::enregistrerIntervention(QString _adresse,QString _casernes_assigne, QString _type, QString _gravite, QString _date, QString _heure, int _victimes, QString _commentaire, QString _statut)
 {
-    QString reqSQL="INSERT INTO interventions (adresse, casernes_assigne, type, gravite, date, heure, victimes, commentaire) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+    QString reqSQL="INSERT INTO interventions (adresse, casernes_assigne, type, gravite, date, heure, victimes, commentaire, statut) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     QSqlQuery sql;
     sql.prepare(reqSQL);
@@ -151,6 +151,9 @@ void FicheUrgence::enregistrerIntervention(QString _adresse,QString _casernes_as
     sql.bindValue(5, _heure);
     sql.bindValue(6, _victimes);
     sql.bindValue(7, _commentaire);
+    sql.bindValue(8, _statut);
+
+
 
     if (!sql.exec()) {
         qDebug("Erreur ajout enregistrement dans BDD:");

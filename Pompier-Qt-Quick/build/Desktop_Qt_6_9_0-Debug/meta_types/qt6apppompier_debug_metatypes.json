@@ -92,6 +92,32 @@
     {
         "classes": [
             {
+                "className": "InterventionModel",
+                "lineNumber": 19,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "chargerDepuisBDD",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "InterventionModel",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "interventionmodel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
                 "className": "SuperviseurOPE",
                 "lineNumber": 14,
                 "methods": [

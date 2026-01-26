@@ -139,9 +139,11 @@ void SuperviseurOPE::recalculerDistance()
 
 void SuperviseurOPE::preparerEnregistrementBDD()
 {
-    qDebug() << "Enregistrement dans la bdd: " << m_adresse << r_caserne_assigne << m_type_intervention << m_gravite << r_date << r_heure << m_victimes << m_commentaire ;
+    QString statut = "en_cours";
 
-    ficheUrgence->enregistrerIntervention(m_adresse, r_caserne_assigne, m_type_intervention, m_gravite, r_date, r_heure, m_victimes, m_commentaire);
+    qDebug() << "Enregistrement dans la bdd: " << m_adresse << r_caserne_assigne << m_type_intervention << m_gravite << r_date << r_heure << m_victimes << m_commentaire << statut;
+
+    ficheUrgence->enregistrerIntervention(m_adresse, r_caserne_assigne, m_type_intervention, m_gravite, r_date, r_heure, m_victimes, m_commentaire, statut);
 
 }
 

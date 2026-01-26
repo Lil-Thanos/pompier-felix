@@ -443,6 +443,7 @@ Rectangle {
                                 superviseur.getNbVictime(nbVictimes.text)
                                 superviseur.getCommentaire(commentaireUrgence.text)
                                 superviseur.getHeure(dateHeure1.text, dateHeure2.text)
+                                interventionModel.chargerDepuisBDD()
                             }
                         }
                     }

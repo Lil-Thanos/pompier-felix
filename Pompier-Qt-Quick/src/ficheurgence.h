@@ -28,7 +28,7 @@ public:
     void       connecterBDD();
     void       deconnecterBDD();
     void       connexionBDDSatut();
-    void       enregistrerIntervention(QString _adresse,QString _casernes_assigne, QString _type, QString _gravite, QString _date, QString _heure, int _victimes, QString _commentaire);
+    void       enregistrerIntervention(QString _adresse,QString _casernes_assigne, QString _type, QString _gravite, QString _date, QString _heure, int _victimes, QString _commentaire, QString statut);
 
     QString    calculerListCasernes(QList<QMap<QString, QVariant>> casernes, double latSinistre, double lonSinistre);
 

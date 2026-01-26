@@ -8,6 +8,7 @@
 
 #include "src/superviseurope.h"
 #include "src/superviseurope.h"
+#include "src/interventionmodel.h"
 
 int main(int argc, char *argv[])
 {
@@ -35,6 +36,14 @@ int main(int argc, char *argv[])
         &app,
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
+
+    InterventionModel interventionModel;
+    interventionModel.chargerDepuisBDD();
+
+    engine.rootContext()->setContextProperty(
+        "interventionModel",
+        &interventionModel
+        );
 
     // --- Load QML ---
     engine.loadFromModule("Pompier", "App");

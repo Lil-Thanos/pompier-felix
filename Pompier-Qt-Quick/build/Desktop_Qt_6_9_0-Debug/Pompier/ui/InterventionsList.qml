@@ -196,58 +196,61 @@ Rectangle {
                 id: listView
                 spacing: 12
 
+                model: interventionModel
+
                 // Propriété de filtre
                 property string statusFilter: ""
 
                 // Filtre dynamique
-                model: ListModel {
-                    id: interventionModel
+                // model: ListModel {
+                //     id: interventionModel
 
-                    // Données d'exemple
-                    ListElement {
-                        //interventionID: int001
-                        adresse: "12 Rue de la République, 75001 Paris"
-                        type: "Incendie"
-                        gravite: "Élevée"
-                        date: "2026-01-26"
-                        heure: "14:32"
-                        statut: "en_cours"
-                        victimes: 2
-                    }
+                //     // Données d'exemple
+                //     ListElement {
+                //         //interventionID: int001
+                //         adresse: "12 Rue de la République, 75001 Paris"
+                //         type: "Incendie"
+                //         gravite: "Élevée"
+                //         date: "2026-01-26"
+                //         heure: "14:32"
+                //         statut: "en_cours"
+                //         victimes: 2
+                //     }
 
-                    ListElement {
-                        //interventionID: int002
-                        adresse: "45 Avenue des Champs, 75008 Paris"
-                        type: "Accident"
-                        gravite: "Moyen"
-                        date: "2026-01-26"
-                        heure: "13:15"
-                        statut: "en_cours"
-                        victimes: 3
-                    }
+                //     ListElement {
+                //         //interventionID: int002
+                //         adresse: "45 Avenue des Champs, 75008 Paris"
+                //         type: "Accident"
+                //         gravite: "Moyen"
+                //         date: "2026-01-26"
+                //         heure: "13:15"
+                //         statut: "en_cours"
+                //         victimes: 3
+                //     }
 
-                    ListElement {
-                        //interventionID: int003
-                        adresse: "7 Boulevard Saint-Germain, 75005 Paris"
-                        type: "Malaise"
-                        gravite: "Faible"
-                        date: "2026-01-25"
-                        heure: "10:45"
-                        statut: "terminee"
-                        victimes: 1
-                    }
+                //     ListElement {
+                //         //interventionID: int003
+                //         adresse: "7 Boulevard Saint-Germain, 75005 Paris"
+                //         type: "Malaise"
+                //         gravite: "Faible"
+                //         date: "2026-01-25"
+                //         heure: "10:45"
+                //         statut: "terminee"
+                //         victimes: 1
+                //     }
 
-                    ListElement {
-                        //interventionID: int004
-                        adresse: "99 Rue de Rivoli, 75004 Paris"
-                        type: "Fuite gaz"
-                        gravite: "Élevée"
-                        date: "2026-01-24"
-                        heure: "09:20"
-                        statut: "terminee"
-                        victimes: 0
-                    }
-                }
+                //     ListElement {
+                //         //interventionID: int004
+                //         adresse: "99 Rue de Rivoli, 75004 Paris"
+                //         type: "Fuite gaz"
+                //         gravite: "Élevée"
+                //         date: "2026-01-24"
+                //         heure: "09:20"
+                //         statut: "terminee"
+                //         victimes: 0
+                //     }
+                // }
+
 
                 delegate: Rectangle {
                     width: parent.width
