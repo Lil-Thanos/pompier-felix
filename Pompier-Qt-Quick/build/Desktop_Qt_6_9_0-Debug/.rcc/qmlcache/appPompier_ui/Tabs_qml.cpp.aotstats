@@ -6,15 +6,15 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 167,
+                        "durationMicroseconds": 240,
                         "errorMessage": "Cannot access value for name interventionModel",
                         "functionName": "onTabChanged",
-                        "line": 120
+                        "line": 119
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 67,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 15
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 244,
+                        "durationMicroseconds": 431,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "model",
                         "line": 19
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 41,
-                        "durationMicroseconds": 26,
+                        "durationMicroseconds": 41,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "isActive",
                         "line": 30
@@ -41,12 +41,12 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 115
+                        "line": 114
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 28,
+                        "durationMicroseconds": 45,
                         "errorMessage": "Cannot access value for name tabButton",
                         "functionName": "color",
                         "line": 34
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 20,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Cannot access value for name tabButton",
                         "functionName": "color",
                         "line": 35
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 6,
+                        "durationMicroseconds": 10,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "radius",
                         "line": 45
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 59,
                         "errorMessage": "Cannot access value for name tabButton",
                         "functionName": "color",
                         "line": 46
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 7,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "fill",
                         "line": 44
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 230,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 58
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 139,
+                        "durationMicroseconds": 207,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 63
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 21,
+                        "durationMicroseconds": 39,
                         "errorMessage": "Cannot access value for name tabButton",
                         "functionName": "color",
                         "line": 66
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 11,
+                        "durationMicroseconds": 19,
                         "errorMessage": "Cannot access value for name tabButton",
                         "functionName": "bold",
                         "line": 65
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 80,
+                        "durationMicroseconds": 125,
                         "errorMessage": "Cannot access value for name Qt",
                         "functionName": "alignment",
                         "line": 67
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 34,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 144,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "visible",
                         "line": 72
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 21,
+                        "durationMicroseconds": 39,
                         "errorMessage": "Cannot access value for name tabButton",
                         "functionName": "color",
                         "line": 76
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 21,
+                        "durationMicroseconds": 40,
                         "errorMessage": "Cannot access value for name tabButton",
                         "functionName": "color",
                         "line": 84
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 47,
-                        "durationMicroseconds": 4,
+                        "durationMicroseconds": 8,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "centerIn",
                         "line": 80
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 49,
-                        "durationMicroseconds": 12,
+                        "durationMicroseconds": 24,
                         "errorMessage": "Cannot access value for name idNotif",
                         "functionName": "target",
                         "line": 89
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 49,
-                        "durationMicroseconds": 12,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name idNotif",
                         "functionName": "target",
                         "line": 95
@@ -174,10 +174,10 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 37,
-                        "durationMicroseconds": 31,
+                        "durationMicroseconds": 49,
                         "errorMessage": "Cannot access value for name interventionModel",
                         "functionName": "target",
-                        "line": 106
+                        "line": 105
                     },
                     {
                         "codegenSuccessfull": false,
@@ -185,7 +185,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "onCompterNbInter",
-                        "line": 108
+                        "line": 107
                     }
                 ],
                 "filepath": "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/Tabs.qml"

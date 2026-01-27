@@ -129,6 +129,7 @@ void SuperviseurOPE::calculerDistanceMin()
 
     emit distanceMinCalculee(mindist);
 
+    calculerTrajet();
     preparerEnregistrementBDD();
 }
 
@@ -147,3 +148,11 @@ void SuperviseurOPE::preparerEnregistrementBDD()
 
 }
 
+void SuperviseurOPE::calculerTrajet()
+{
+    double temps = ficheUrgence->calculerTempsTrajet();
+
+    QString temps_affichage = "Temps d'intervention : " + QString::number(temps) + "en mins";
+
+    emit afficherTempsTrajet(temps_affichage);
+}

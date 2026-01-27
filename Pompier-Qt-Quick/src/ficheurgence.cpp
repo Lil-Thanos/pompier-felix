@@ -134,6 +134,9 @@ QString FicheUrgence::calculerListCasernes(QList<QMap<QString, QVariant>> casern
     }
 
     qDebug() << "Caserne la plus proche :" << casernePlusProche << "Distance :" << distanceMin << "km";
+
+    m_distance = distanceMin;
+
     return casernePlusProche + "\n(" + QString::number(distanceMin, ' ', 2) + " km)";
 }
 
@@ -161,4 +164,14 @@ void FicheUrgence::enregistrerIntervention(QString _adresse,QString _casernes_as
     else {
         qDebug("enregistrement reussi:");
     }
+}
+
+double FicheUrgence::calculerTempsTrajet()
+{
+    double temps_minutes = (m_distance / _VITESSE_MOYENNE) * _KMH_TO_MIN;
+
+    qDebug() << "Calcule temps trajet : " << _VITESSE_MOYENNE << "km/h, Distance :" << m_distance << "km temps total : " << temps_minutes;
+
+
+    return temps_minutes;
 }

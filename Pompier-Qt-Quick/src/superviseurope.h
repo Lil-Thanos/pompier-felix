@@ -35,6 +35,7 @@ public:
 signals:
     void        distanceMinCalculee(QString distance);
     void        messageInfo(QString message);
+    void        afficherTempsTrajet(QString temps_affichage);
 
 private slots:
     void        getLonLatGeocoding(double lat, double lon, QString code_postal, QString adresse_complete);
@@ -64,6 +65,7 @@ private:
     int             m_victimes;
 
     void        creerFicheUrgence(double latitude, double longitude);
+    void        calculerTrajet();
 
 };
 

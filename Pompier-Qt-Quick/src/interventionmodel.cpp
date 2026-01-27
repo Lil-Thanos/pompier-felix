@@ -46,7 +46,7 @@ void InterventionModel::chargerDepuisBDD()
     beginResetModel();
     m_interventions.clear();
 
-    QSqlQuery query("SELECT * FROM interventions");
+    QSqlQuery query("SELECT * FROM interventions ORDER BY substr(date, 7, 4) || '-' || substr(date, 4, 2) || '-' || substr(date, 1, 2) || ' ' || heure DESC;");
 
     while (query.next()) {
         m_interventions.append({

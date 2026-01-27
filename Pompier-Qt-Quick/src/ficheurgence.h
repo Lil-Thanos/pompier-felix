@@ -19,6 +19,12 @@ private:
     QSqlDatabase base;
 
     const double     _R =  6371.0;
+    const int        _VITESSE_MOYENNE = 60;
+    const double     _KMH_TO_MIN = 60.0;
+
+
+
+    double           m_distance;
 
 public:
     FicheUrgence();
@@ -33,6 +39,7 @@ public:
     QString    calculerListCasernes(QList<QMap<QString, QVariant>> casernes, double latSinistre, double lonSinistre);
 
     double     calculerHaversine(double longitude_s, double lattitude_s, double longitude_t, double lattitude_t);
+    double     calculerTempsTrajet();
 
 signals:
     void       statutBDD(bool ok);

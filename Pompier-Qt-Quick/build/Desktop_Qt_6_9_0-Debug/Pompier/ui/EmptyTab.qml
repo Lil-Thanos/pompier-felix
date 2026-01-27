@@ -32,7 +32,7 @@ Rectangle {
                 anchors.rightMargin: 24
 
                 Text {
-                    text: "👥 Gestion des Renforts"
+                    text: "👥 Gestion des Renforts                                                                                                                                                                                                                                                                                       (DEMO)"
                     font.pixelSize: 20
                     font.bold: true
                     color: "white"

@@ -185,8 +185,9 @@ Rectangle {
                 Button {
                     id: refreshButton
                     text: "↻"
-                    Layout.preferredWidth: 100
+                    Layout.preferredWidth: 80
                     Layout.preferredHeight: 36
+
 
                     background: Rectangle {
                         radius: 6

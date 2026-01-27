@@ -143,7 +143,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 4,
+                        "index": 5,
                         "name": "getAdresse",
                         "returnType": "void"
                     },
@@ -155,7 +155,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 5,
+                        "index": 6,
                         "name": "getType",
                         "returnType": "void"
                     },
@@ -167,7 +167,7 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 6,
+                        "index": 7,
                         "name": "getGravite",
                         "returnType": "void"
                     },
@@ -179,7 +179,7 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 7,
+                        "index": 8,
                         "name": "getNbVictime",
                         "returnType": "void"
                     },
@@ -191,7 +191,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 8,
+                        "index": 9,
                         "name": "getCommentaire",
                         "returnType": "void"
                     },
@@ -207,19 +207,19 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 9,
+                        "index": 10,
                         "name": "getHeure",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 10,
+                        "index": 11,
                         "name": "recalculerDistance",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 11,
+                        "index": 12,
                         "name": "preparerEnregistrementBDD",
                         "returnType": "void"
                     }
@@ -250,6 +250,18 @@
                         "index": 1,
                         "name": "messageInfo",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "temps_affichage",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "afficherTempsTrajet",
+                        "returnType": "void"
                     }
                 ],
                 "slots": [
@@ -273,13 +285,13 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 2,
+                        "index": 3,
                         "name": "getLonLatGeocoding",
                         "returnType": "void"
                     },
                     {
                         "access": "private",
-                        "index": 3,
+                        "index": 4,
                         "name": "calculerDistanceMin",
                         "returnType": "void"
                     }

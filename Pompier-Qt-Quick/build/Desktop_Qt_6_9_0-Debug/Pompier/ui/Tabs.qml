@@ -101,7 +101,6 @@ Rectangle {
                             }
                         }
 
-
                         Connections {
                             target: interventionModel
 

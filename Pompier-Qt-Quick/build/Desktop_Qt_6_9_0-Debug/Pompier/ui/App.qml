@@ -92,7 +92,8 @@ ApplicationWindow {
                                     visible: false
                                 }
                                 Text {
-                                    text: "Temps de réponse: 5 min"
+                                    id: tempsTrajet
+                                    text: ""
                                     font.pixelSize: 14
                                     color: "#6b7280"
                                 }
@@ -116,6 +117,10 @@ ApplicationWindow {
 
                         function onMessageInfo(msg) {
                             retourCaserne.text = msg
+                        }
+
+                        function onAfficherTempsTrajet(temps) {
+                            tempsTrajet.text = temps
                         }
                     }
 
