@@ -152,7 +152,7 @@ void SuperviseurOPE::calculerTrajet()
 {
     double temps = ficheUrgence->calculerTempsTrajet();
 
-    QString temps_affichage = "Temps d'intervention : " + QString::number(temps) + "en mins";
+    QString temps_affichage = "Temps d'intervention : " + QString::number(temps) + " en mins.";
 
     emit afficherTempsTrajet(temps_affichage);
 }

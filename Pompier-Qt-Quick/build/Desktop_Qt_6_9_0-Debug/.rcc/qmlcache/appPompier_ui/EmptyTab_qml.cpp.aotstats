@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 395,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 11
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 42,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 24
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 83,
                         "errorMessage": "Cannot load property color from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/EmptyTab.qml)::parent with type QQuickItem.",
                         "functionName": "color",
                         "line": 26
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 49,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 23
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 22,
+                        "durationMicroseconds": 42,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 30
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 20,
+                        "durationMicroseconds": 37,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 51
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 35,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 57
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 65
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 28,
+                        "durationMicroseconds": 52,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 72

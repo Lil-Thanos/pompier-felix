@@ -18,8 +18,10 @@ public:
 private:
     QSqlDatabase base;
 
+    const QString    _BDD_PATH = "/home/felix/Documents/projet/CasernesBZH.db";
+
     const double     _R =  6371.0;
-    const int        _VITESSE_MOYENNE = 60;
+    const int        _VITESSE_MOYENNE = 86; // La vitesse moyenne sur l'ensemble du parcours est 86 km/h.
     const double     _KMH_TO_MIN = 60.0;
 
 

@@ -62,20 +62,14 @@ Rectangle {
         // Status Badge
         StatusBadge {
             id: badgeStatut
-        }
-
-        Connections {
-            target: superviseur
-
-            function onStatutBDD(ok) {
-                badgeStatut.enService = ok
-            }
+            Layout.alignment: Qt.AlignVCenter
         }
 
         // Time Display
         Rectangle {
             width: 100
             height: 36
+            Layout.alignment: Qt.AlignVCenter
             radius: 6
             color: "#7f1d1d"
 

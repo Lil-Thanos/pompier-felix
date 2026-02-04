@@ -93,7 +93,7 @@
         "classes": [
             {
                 "className": "InterventionModel",
-                "lineNumber": 19,
+                "lineNumber": 20,
                 "methods": [
                     {
                         "access": "public",

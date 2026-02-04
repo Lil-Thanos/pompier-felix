@@ -8,7 +8,7 @@ FicheUrgence::FicheUrgence(QObject *parent)
 
 void FicheUrgence::connecterBDD()
 {
-    base.setDatabaseName("/home/felix/Documents/projet/CasernesBZH.db");
+    base.setDatabaseName(_BDD_PATH);
     if (!base.open()) {
         qDebug() << "Impossible d'ouvrir la base de données!";
     } else {

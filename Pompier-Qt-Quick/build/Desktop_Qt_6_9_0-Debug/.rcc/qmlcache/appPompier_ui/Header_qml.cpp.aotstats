@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 131,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 22
@@ -14,82 +14,82 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 27,
+                        "durationMicroseconds": 47,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 36
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 21,
-                        "durationMicroseconds": 37,
-                        "errorMessage": "Cannot access value for name superviseur",
-                        "functionName": "target",
-                        "line": 68
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 65
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 13,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Functions without type annotations won't be compiled",
-                        "functionName": "onStatutBDD",
-                        "line": 70
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 72
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 249,
                         "errorMessage": "",
                         "functionName": "text",
-                        "line": 85
+                        "line": 79
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 43,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 84
+                        "line": 78
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 179,
+                        "durationMicroseconds": 278,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 94
+                        "line": 88
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 44,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 110
+                        "line": 104
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 190,
                         "errorMessage": "Cannot access value for name Image",
                         "functionName": "fillMode",
-                        "line": 122
+                        "line": 116
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 31,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 133
+                        "line": 127
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 94,
+                        "durationMicroseconds": 153,
                         "errorMessage": "Cannot access value for name Image",
                         "functionName": "fillMode",
-                        "line": 145
+                        "line": 139
                     }
                 ],
                 "filepath": "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/Header.qml"

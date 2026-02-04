@@ -6,14 +6,15 @@
 #include <QDebug>
 
 struct Intervention {
-    int id;
-    QString adresse;
-    QString type;
-    QString gravite;
-    QString date;
-    QString heure;
-    QString statut;
-    int victimes;
+    int         id;
+    QString     adresse;
+    QString     type;
+    QString     gravite;
+    QString     date;
+    QString     heure;
+    QString     statut;
+    int         victimes;
+
 };
 
 class InterventionModel : public QAbstractListModel
@@ -41,11 +42,11 @@ public:
     Q_INVOKABLE void chargerDepuisBDD();
 
 private:
-    QList<Intervention> m_interventions;
+    QList<Intervention>     m_interventions;
 
     void         afficherNbInter();
 
 signals:
-    void compterNbInter(int nb_inter_en_cours);
+    void         compterNbInter(int nb_inter_en_cours);
 
 };

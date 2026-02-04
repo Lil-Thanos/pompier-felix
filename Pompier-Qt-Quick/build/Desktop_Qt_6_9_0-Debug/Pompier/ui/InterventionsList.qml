@@ -242,7 +242,7 @@ Rectangle {
                 property string statusFilter: ""
 
                 delegate: Rectangle {
-                    width: parent.width
+                    width: listView.width
                     height: itemVisible ? 120 : 0
                     opacity: itemVisible ? 1 : 0
                     visible: itemVisible
