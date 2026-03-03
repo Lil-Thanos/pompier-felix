@@ -54,6 +54,7 @@ qt_add_qml_module(appPompier
         ${BACKEND_SOURCES}
         QML_FILES ui/InterventionsList.qml ui/EmptyTab.qml
         SOURCES src/interventionmodel.h src/interventionmodel.cpp
+        SOURCES src/sendserver.h src/sendserver.cpp
 )
 
 

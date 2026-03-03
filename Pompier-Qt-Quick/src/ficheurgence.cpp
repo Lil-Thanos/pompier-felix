@@ -1,4 +1,5 @@
 #include "ficheurgence.h"
+#include <ostream>
 
 FicheUrgence::FicheUrgence(QObject *parent)
     : QObject(parent)
@@ -29,7 +30,6 @@ void FicheUrgence::connexionBDDSatut()
     emit statutBDD(base.isOpen());
 }
 
-
 double FicheUrgence::calculerHaversine(double longitude_s, double latitude_s, double longitude_t, double latitude_t)
 {
     // Conversion degrés vers radians
@@ -38,10 +38,7 @@ double FicheUrgence::calculerHaversine(double longitude_s, double latitude_s, do
     double lat2 = latitude_t * M_PI / 180.0;
     double lon2 = longitude_t * M_PI / 180.0;
 
-    double d = _R * acos(
-                   cos(lat1) * cos(lat2) * cos(lon2 - lon1) +
-                   sin(lat1) * sin(lat2)
-                   );
+    double d = _R * acos(cos(lat1) * cos(lat2) * cos(lon2 - lon1) + sin(lat1) * sin(lat2));
 
     return d; // return la distance entre la caserne et le sinistre
 }
@@ -174,4 +171,52 @@ double FicheUrgence::calculerTempsTrajet()
 
 
     return temps_minutes;
+}
+
+void FicheUrgence::get_serverInfo(int server_id, QByteArray paylaod_data)
+{
+    QSqlQuery query(base);
+
+    query.prepare("SELECT ip, port FROM servers WHERE id = ?");
+    query.addBindValue(server_id);
+
+    if (!query.exec()) {
+        qDebug() << "Erreur SQL:" << query.lastError().text();
+        return;
+    }
+
+    if (query.next()) {
+        m_ip = query.value("ip").toString();
+        m_port = query.value("port").toUInt();
+
+        qDebug() << "Info du server =" << m_ip << ":" << m_port;
+    } else {
+        qDebug() << "Aucun serveur trouvé pour id =" << server_id;
+    }
+
+    sendServer->send_packet(m_ip, m_port, server_id, paylaod_data);
+}
+
+int FicheUrgence::get_serverId(QString caserne_assigner)
+{
+    QSqlQuery query(base);
+
+    int id = 0;
+
+    query.prepare("SELECT id FROM servers WHERE name = ?");
+    query.addBindValue(caserne_assigner);
+
+    if (!query.exec()) {
+        qDebug() << "Erreur SQL:" << query.lastError().text();
+        return id;
+    }
+
+    if (query.next()) {
+        id = query.value("id").toInt();
+        qDebug() << "id du server =" << id;
+    } else {
+        qDebug() << "Aucun serveur trouvé";
+    }
+
+    return id;
 }

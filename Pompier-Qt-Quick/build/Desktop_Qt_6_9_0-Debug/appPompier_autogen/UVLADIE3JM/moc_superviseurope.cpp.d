@@ -2,6 +2,8 @@
   /home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/appPompier_autogen/moc_predefs.h \
   /home/felix/Documents/projet/Pompier-Qt-Quick/src/ficheurgence.h \
   /home/felix/Documents/projet/Pompier-Qt-Quick/src/geocoding.h \
+  /home/felix/Documents/projet/Pompier-Qt-Quick/src/sendserver.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QByteArray \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QDateTime \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QDebug \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QFlags \
@@ -161,6 +163,7 @@
   /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/QNetworkRequest \
   /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/QSslConfiguration \
   /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/QTcpSocket \
   /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qabstractsocket.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qhostaddress.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qhttpheaders.h \
@@ -187,8 +190,13 @@
   /home/felix/Qt/6.9.0/gcc_64/include/QtSql/qtsqlexports.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtSql/qtsqlglobal.h \
   /usr/include/alloca.h \
+  /usr/include/arpa/inet.h \
+  /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm-generic/sockios.h \
   /usr/include/assert.h \
   /usr/include/c++/12/algorithm \
   /usr/include/c++/12/array \
@@ -355,7 +363,10 @@
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
   /usr/include/locale.h \
+  /usr/include/netinet/in.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -366,7 +377,12 @@
   /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
@@ -375,6 +391,7 @@
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/in.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
@@ -387,6 +404,9 @@
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
@@ -415,7 +435,9 @@
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
@@ -444,6 +466,7 @@
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \

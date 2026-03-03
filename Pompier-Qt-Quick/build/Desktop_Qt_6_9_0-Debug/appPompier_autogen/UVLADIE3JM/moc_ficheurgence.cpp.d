@@ -1,8 +1,12 @@
 /home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/appPompier_autogen/UVLADIE3JM/moc_ficheurgence.cpp: /home/felix/Documents/projet/Pompier-Qt-Quick/src/ficheurgence.h \
   /home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/appPompier_autogen/moc_predefs.h \
+  /home/felix/Documents/projet/Pompier-Qt-Quick/src/sendserver.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QByteArray \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QDebug \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/QObject \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/q17memory.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/q20functional.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtCore/q20iterator.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/q20memory.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/q20type_traits.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/q20utility.h \
@@ -46,6 +50,7 @@
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qglobalstatic.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qhash.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qhashfunctions.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qiodevice.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qiodevicebase.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qiterable.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qiterator.h \
@@ -76,6 +81,7 @@
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qshareddata_impl.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qsharedpointer.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qsharedpointer_impl.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qspan.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qstdlibdetection.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qstring.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qstringalgorithms.h \
@@ -119,6 +125,13 @@
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qversiontagging.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qxptype_traits.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtCore/qyieldcpu.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/QTcpSocket \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qabstractsocket.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qhostaddress.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qtcpsocket.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
+  /home/felix/Qt/6.9.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtSql/QSqlDatabase \
   /home/felix/Qt/6.9.0/gcc_64/include/QtSql/QSqlError \
   /home/felix/Qt/6.9.0/gcc_64/include/QtSql/QSqlQuery \
@@ -129,8 +142,13 @@
   /home/felix/Qt/6.9.0/gcc_64/include/QtSql/qtsqlexports.h \
   /home/felix/Qt/6.9.0/gcc_64/include/QtSql/qtsqlglobal.h \
   /usr/include/alloca.h \
+  /usr/include/arpa/inet.h \
+  /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm-generic/sockios.h \
   /usr/include/assert.h \
   /usr/include/c++/12/algorithm \
   /usr/include/c++/12/array \
@@ -222,6 +240,7 @@
   /usr/include/c++/12/bits/uses_allocator.h \
   /usr/include/c++/12/bits/utility.h \
   /usr/include/c++/12/bits/vector.tcc \
+  /usr/include/c++/12/cassert \
   /usr/include/c++/12/cctype \
   /usr/include/c++/12/cerrno \
   /usr/include/c++/12/chrono \
@@ -296,7 +315,10 @@
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
   /usr/include/locale.h \
+  /usr/include/netinet/in.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -307,7 +329,12 @@
   /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
@@ -316,6 +343,7 @@
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/in.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
@@ -328,6 +356,9 @@
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
@@ -356,7 +387,9 @@
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
@@ -385,6 +418,7 @@
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \

@@ -7,6 +7,8 @@
 #include <QVariant>
 #include <QDebug>
 #include <QDateTime>
+#include <QJsonObject>
+#include <QJsonDocument>
 
 #include "src/ficheurgence.h"
 #include "src/geocoding.h"
@@ -30,6 +32,7 @@ public:
     Q_INVOKABLE void        recalculerDistance();
     Q_INVOKABLE void        preparerEnregistrementBDD();
 
+    QByteArray              constructionJson();
 
 
 signals:
@@ -63,6 +66,8 @@ private:
     QString         m_commentaire;
 
     int             m_victimes;
+
+    int             r_idCaserneServer;
 
     void        creerFicheUrgence(double latitude, double longitude);
     void        calculerTrajet();

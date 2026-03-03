@@ -142,7 +142,15 @@ void SuperviseurOPE::preparerEnregistrementBDD()
 {
     QString statut = "en_cours";
 
+    // _DATA = m_type_intervention + "|" + m_adresse + "|" + m_gravite + "|" + m_victimes + "|" + m_commentaire + "|" + r_date + "::" + r_heure;
+
+    QByteArray _DATA = constructionJson();
+
     qDebug() << "Enregistrement dans la bdd: " << m_adresse << r_caserne_assigne << m_type_intervention << m_gravite << r_date << r_heure << m_victimes << m_commentaire << statut;
+
+    r_idCaserneServer =  ficheUrgence->get_serverId(r_caserne_assigne);
+
+    ficheUrgence->get_serverInfo(r_idCaserneServer, _DATA);
 
     ficheUrgence->enregistrerIntervention(m_adresse, r_caserne_assigne, m_type_intervention, m_gravite, r_date, r_heure, m_victimes, m_commentaire, statut);
 
@@ -155,4 +163,20 @@ void SuperviseurOPE::calculerTrajet()
     QString temps_affichage = "Temps d'intervention : " + QString::number(temps) + " en mins.";
 
     emit afficherTempsTrajet(temps_affichage);
+}
+
+QByteArray SuperviseurOPE::constructionJson()
+{
+    QJsonObject jsonObj;
+    jsonObj["type"] = m_type_intervention;
+    jsonObj["adresse"] = m_adresse;
+    jsonObj["gravite"] = m_gravite;
+    jsonObj["victimes"] = m_victimes;
+    jsonObj["commentaire"] = m_commentaire;
+    jsonObj["date"] = r_date;
+    jsonObj["heure"] = r_heure;
+
+    QByteArray payload = QJsonDocument(jsonObj).toJson(QJsonDocument::Compact);
+
+    return payload;
 }

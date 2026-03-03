@@ -7,6 +7,8 @@
 #include <QObject>
 #include <QSqlError>
 
+#include "sendserver.h"
+
 class FicheUrgence : public QObject
 {
     Q_OBJECT
@@ -16,6 +18,7 @@ public:
 
 
 private:
+    SendServer    *sendServer = nullptr;
     QSqlDatabase base;
 
     const QString    _BDD_PATH = "/home/felix/Documents/projet/CasernesBZH.db";
@@ -27,6 +30,8 @@ private:
 
 
     double           m_distance;
+    QString          m_ip;
+    int              m_port;
 
 public:
     FicheUrgence();
@@ -37,6 +42,8 @@ public:
     void       deconnecterBDD();
     void       connexionBDDSatut();
     void       enregistrerIntervention(QString _adresse,QString _casernes_assigne, QString _type, QString _gravite, QString _date, QString _heure, int _victimes, QString _commentaire, QString statut);
+    void       get_serverInfo(int server_id, QByteArray paylaod_data);
+    int        get_serverId(QString caserne_assigner);
 
     QString    calculerListCasernes(QList<QMap<QString, QVariant>> casernes, double latSinistre, double lonSinistre);
 
