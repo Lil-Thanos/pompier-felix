@@ -6,7 +6,7 @@ ServerTcp::ServerTcp(QObject *parent) : QObject(parent)
 
     connect(server, &QTcpServer::newConnection, this, &ServerTcp::nouvelleConnexion);
 
-    server->listen(QHostAddress::Any, _PORT_SERVER);
+
 }
 
 void ServerTcp::nouvelleConnexion()
@@ -19,7 +19,9 @@ void ServerTcp::nouvelleConnexion()
 
     connect(clientSocket, &QTcpSocket::disconnected, this, [=](){buffers.remove(clientSocket); clientSocket->deleteLater();});
 
-    qDebug() << "Nouvelle connexion";
+    QString ipPort = clientSocket->peerAddress().toString() + ":" + QString::number(clientSocket->peerPort());
+
+    std::cout << "[+] Nouvelle connexion: " << ipPort.toStdString() << std::endl;
 }
 
 void ServerTcp::recevoirJSON()
@@ -56,17 +58,89 @@ void ServerTcp::recevoirJSON()
         // Supprimer header + payload du buffer
         buffer.remove(0, sizeof(HeaderPacket) + size);
 
-        qDebug() << "Header reçu:"<< "size=" << size << "type=" << type << "server_id=" << server_id;
+        std::cout << "[*] Header reçu:"<< "size=" << size << "type=" << type << "server_id=" << server_id << std::endl;
 
         // parser JSON
         QJsonDocument doc = QJsonDocument::fromJson(jsonData);
         if (!doc.isObject()) {
-            qDebug() << "JSON invalide";
+            std::cout << "[X] JSON invalide" << std::endl;
             continue;
         }
 
         QJsonObject obj = doc.object();
 
-        qDebug() << "Intervention reçue:" << obj["type"].toString() << obj["adresse"].toString() << obj["gravite"].toInt() << obj["victimes"].toInt() << obj["commentaire"].toString() << obj["date"].toString() << obj["heure"].toString();
+        QString sType        = obj["type"].toString();
+        QString sAdresse     = obj["adresse"].toString();
+        int     iGravite     = obj["gravite"].toInt();
+        int     iVictimes    = obj["victimes"].toInt();
+        QString sCommentaire = obj["commentaire"].toString();
+        QString sDate        = obj["date"].toString();
+        QString sHeure       = obj["heure"].toString();
+
+        std::cout << "[*] Intervention reçue: "
+                  << obj["type"].toString().toStdString() << " | "
+                  << obj["adresse"].toString().toStdString() << " | "
+                  << obj["gravite"].toInt() << " | "
+                  << obj["victimes"].toInt() << " | "
+                  << obj["commentaire"].toString().toStdString() << " | "
+                  << obj["date"].toString().toStdString() << " | "
+                  << obj["heure"].toString().toStdString()
+                  << std::endl;
+
+        enregistrementBDD(sType, sAdresse, iGravite, iVictimes, sCommentaire, sDate, sHeure, server_id);
+
+
+    }
+}
+
+bool ServerTcp::connexionBDD()
+{
+    db = QSqlDatabase::addDatabase("QMYSQL");
+    db.setHostName("localhost");
+    db.setDatabaseName("secours");
+    db.setUserName("alerte");
+    db.setPassword("motdepassealerte");
+
+    if (!db.open()) {
+        std::cout << "[X] Erreur connexion BDD : " << db.lastError().text().toStdString() << std::endl;
+        return false;
+    }
+    std::cout << "[+] BDD connectée : " << db.hostName().toStdString() << " / " << db.databaseName().toStdString() << std::endl;
+    return true;
+}
+
+void ServerTcp::demarrer()
+{
+    server->listen(QHostAddress::Any, _PORT_SERVER);
+    std::cout << "[-] Ecoute sur le port : " << _PORT_SERVER << std::endl;
+    std::cout << "[-] Attente de connexion..." << std::endl;
+}
+
+
+void ServerTcp::enregistrementBDD(const QString& type, const QString& adresse,int gravite, int victimes, const QString& commentaire, const QString& date, const QString& heure, uint16_t server_id){
+    QString reqSQL = "INSERT INTO alerte "
+                     "(type, adresse, gravite, victimes, commentaire, date, heure, server_id) "
+                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+
+    QSqlQuery sql(db);
+
+    sql.prepare(reqSQL);
+
+    sql.bindValue(0, type);
+    sql.bindValue(1, adresse);
+    sql.bindValue(2, gravite);
+    sql.bindValue(3, victimes);
+    sql.bindValue(4, commentaire);
+    sql.bindValue(5, date);
+    sql.bindValue(6, heure);
+    sql.bindValue(7, server_id);
+
+    if(!sql.exec())
+    {
+        std::cout << "[X] Erreur SQL :" << sql.lastError().text().toStdString() << std::endl;
+    }
+    else
+    {
+        std::cout << "[*] Intervention enregistrée en BDD" << std::endl;
     }
 }

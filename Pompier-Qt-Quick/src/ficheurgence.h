@@ -19,7 +19,7 @@ public:
 
 private:
     SendServer    *sendServer = nullptr;
-    QSqlDatabase base;
+    QSqlDatabase   base;
 
     const QString    _BDD_PATH = "/home/felix/Documents/projet/CasernesBZH.db";
 
