@@ -1,3 +1,5 @@
+# ☎️ Logiciel Superviseur OPE
+
 **Superviseur OPE** est un logiciel desktop développé en **C++** avec **Qt** permettant de déterminer la caserne de pompiers la plus proche d'un sinistre.
 
 L'application utilise des données issues de **OpenStreetMap**, stockées dans une base **SQLite**, et calcule les distances géographiques grâce à la formule de **Haversine**.
