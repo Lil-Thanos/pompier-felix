@@ -91,6 +91,9 @@ Le **Serveur Caserne OPE** est une application installée dans chaque caserne.
 - 💾 Enregistre les alertes dans une base MariaDB
 - 🎛️ Permet une gestion locale des interventions
 
+  <img width="1003" height="377" alt="image" src="https://github.com/user-attachments/assets/fce7aa76-ad4d-4809-82f5-e3a97e0cc195" />
+
+
 ### Table `servers`
 
 Cette table associe une caserne à son serveur de réception d'alertes.
