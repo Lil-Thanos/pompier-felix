@@ -40,7 +40,6 @@ Les données des casernes proviennent de **OpenStreetMap** et sont récupérées
 2. Export au format CSV
 3. Nettoyage des données
 4. Import dans la base SQLite
-5. Visionnage des alertes "en cours" ou "terminée"
 
 ## 🖥️ Interface opérateur
 
@@ -49,6 +48,8 @@ L'interface permet à l'opérateur de :
 - 📍 Déclarer un sinistre
 - 🔍 Calculer la caserne la plus proche
 - 📢 Envoyer une alerte d'intervention
+- 💽 Visionnage des alertes "en cours" ou "terminée"
+
 
 ### Aperçu de l'application
 
