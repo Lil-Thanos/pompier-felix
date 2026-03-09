@@ -134,6 +134,6 @@ Le struct HeaderPacket sert à définir l’en-tête d’un paquet TCP. L’idé
 struct HeaderPacket {
     uint32_t size;       // Taille du payload (données JSON) en octets
     uint16_t type;       // Type de paquet (ex : intervention, sinistre, statut serveur…)
-    uint16_t server_id;  // Identifiant du serveur ou de la caserne émettrice
+    uint16_t server_id;  // Identifiant du centre d’appel émetteur (0 = phase de test)
 };
 ```
