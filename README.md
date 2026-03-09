@@ -124,9 +124,7 @@ Le Serveur Caserne OPE est un logiciel serveur console (C++ et Qt) installé dan
 - 🎛️ Permet une gestion locale des interventions
 
 Image fonctionnement server lors de la reception d'une alerte:
-  <img width="1003" height="377" alt="image" src="https://github.com/user-attachments/assets/fce7aa76-ad4d-4809-82f5-e3a97e0cc195" />
-
-<img width="1080" height="402" alt="image" src="https://github.com/user-attachments/assets/0f41ad10-d4dc-4f4e-bf1f-36f771122851" />
+<img width="1087" height="404" alt="image" src="https://github.com/user-attachments/assets/becd5525-742f-4c84-93e0-9beae948b44c" />
 
 
 ## ✏️ Structure HeaderPacket pour TCP
