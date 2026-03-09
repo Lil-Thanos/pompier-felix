@@ -67,6 +67,8 @@ L'interface permet à l'opérateur de :
 
 #### Description des champs
 
+casernes_tmp
+
 | Champ      | Type | Description                        |
 | ---------- | ---- | ---------------------------------- |
 | `id`       | TEXT | Identifiant OpenStreetMap          |
@@ -76,6 +78,8 @@ L'interface permet à l'opérateur de :
 | `city`     | TEXT | Ville                              |
 | `postcode` | TEXT | Code postal                        |
 | `operator` | TEXT | Organisme opérateur (ex : SDIS 22) |
+
+interventions
 
 | Champ              | Type    | Description                   |
 | ------------------ | ------- | ----------------------------- |
@@ -90,11 +94,15 @@ L'interface permet à l'opérateur de :
 | `commentaire`      | TEXT    | Commentaire associé           |
 | `statut`           | TEXT    | Statut de l'intervention      |
 
+servers
+
 | Champ  | Type    | Description              |
 | ------ | ------- | ------------------------ |
 | `id`   | INTEGER | Identifiant du serveur   |
 | `ip`   | TEXT    | Adresse IP du serveur    |
 | `port` | INTEGER | Port d'écoute du serveur |
+
+sinistres
 
 | Champ         | Type     | Description               |
 | ------------- | -------- | ------------------------- |
