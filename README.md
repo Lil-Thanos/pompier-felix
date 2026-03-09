@@ -128,7 +128,7 @@ Image fonctionnement server lors de la reception d'une alerte:
 
 ### Structure HeaderPacket pour TCP
 
-Le struct HeaderPacket sert à définir l’en-tête d’un paquet TCP. L’idée est que chaque paquet envoyé sur le réseau commence par ce header, qui contient les informations nécessaires pour que le destinataire comprenne comment traiter le reste des données (le payload).
+Le struct HeaderPacket est utilsé pour définir l’en-tête d’un paquet TCP. L’idée est que chaque paquet envoyé sur le réseau commence par ce header, qui contient les informations nécessaires pour que le destinataire (serveur de la caserne) comprenne comment traiter le reste des données (le payload).
 
 ```c++
 struct HeaderPacket {
