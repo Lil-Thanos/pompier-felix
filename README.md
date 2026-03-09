@@ -67,3 +67,48 @@ CREATE TABLE casernes_tmp (
     postcode TEXT,
     operator TEXT
 );
+
+```
+
+#### Description des champs
+
+| Champ | Type | Description |
+|-------|------|-------------|
+| `id` | TEXT | Identifiant OpenStreetMap |
+| `name` | TEXT | Nom de la caserne |
+| `lat` | REAL | Latitude |
+| `lon` | REAL | Longitude |
+| `city` | TEXT | Ville |
+| `postcode` | TEXT | Code postal |
+| `operator` | TEXT | Organisme opérateur (ex : SDIS 22) |
+
+## 📬 Serveur Caserne OPE
+
+Le **Serveur Caserne OPE** est une application installée dans chaque caserne.
+
+- 🔄 Fonctionne 24h/24
+- 📨 Reçoit les alertes d'intervention
+- 💾 Enregistre les alertes dans une base MariaDB
+- 🎛️ Permet une gestion locale des interventions
+
+### Table `servers`
+
+Cette table associe une caserne à son serveur de réception d'alertes.
+
+```sql
+CREATE TABLE servers (
+    id INTEGER,
+    ip TEXT NOT NULL,
+    port INTEGER NOT NULL,
+    FOREIGN KEY (id) REFERENCES casernes_tmp(id)
+);
+
+```
+
+#### Description des champs
+
+| Champ | Type | Description |
+|-------|------|-------------|
+| `id` | INTEGER | Identifiant de la caserne |
+| `ip` | TEXT | Adresse IP du serveur |
+| `port` | INTEGER | Port d'écoute du serveur |
