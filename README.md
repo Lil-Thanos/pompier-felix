@@ -40,6 +40,7 @@ Les données des casernes proviennent de **OpenStreetMap** et sont récupérées
 2. Export au format CSV
 3. Nettoyage des données
 4. Import dans la base SQLite
+5. Visionnage des alertes "en cours" ou "terminée"
 
 ## 🖥️ Interface opérateur
 
