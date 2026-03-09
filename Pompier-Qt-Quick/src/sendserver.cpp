@@ -26,8 +26,8 @@ void SendServer::send_packet(QString ip,int port, int serverID, QByteArray paylo
     packet.append(payload_data);
 
     // Envoie
-    socket->write(packet);
-    socket->flush();
+    tmpSocket.write(packet);
+    tmpSocket.flush();
 
     tmpSocket.disconnectFromHost();
 }

@@ -1,10 +1,12 @@
 #include "ficheurgence.h"
-#include <ostream>
+#include <iostream>
 
 FicheUrgence::FicheUrgence(QObject *parent)
     : QObject(parent)
 {
     base = QSqlDatabase::addDatabase("QSQLITE");
+    sendServer = new SendServer();
+
 }
 
 void FicheUrgence::connecterBDD()

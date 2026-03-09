@@ -74,6 +74,7 @@ void ServerTcp::recevoirJSON()
         int     iGravite     = obj["gravite"].toInt();
         int     iVictimes    = obj["victimes"].toInt();
         QString sCommentaire = obj["commentaire"].toString();
+
         QString sDate        = obj["date"].toString();
         QString sHeure       = obj["heure"].toString();
 
@@ -117,27 +118,42 @@ void ServerTcp::demarrer()
 }
 
 
-void ServerTcp::enregistrementBDD(const QString& type, const QString& adresse,int gravite, int victimes, const QString& commentaire, const QString& date, const QString& heure, uint16_t server_id){
-    QString reqSQL = "INSERT INTO alerte "
-                     "(type, adresse, gravite, victimes, commentaire, date, heure, server_id) "
-                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+void ServerTcp::enregistrementBDD(const QString& type, const QString& adresse, int gravite, int victimes, const QString& commentaire, const QString& date, const QString& heure, uint16_t server_id)
+{
+    QString reqSQL =
+        "INSERT INTO alerte (type, adresse, gravite, victimes, commentaire, date, heure, server_id) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
     QSqlQuery sql(db);
 
-    sql.prepare(reqSQL);
+    if(!sql.prepare(reqSQL))
+    {
+        std::cout << "[X] Erreur prepare : " << sql.lastError().text().toStdString() << std::endl;
+        return;
+    }
 
-    sql.bindValue(0, type);
-    sql.bindValue(1, adresse);
-    sql.bindValue(2, gravite);
-    sql.bindValue(3, victimes);
-    sql.bindValue(4, commentaire);
-    sql.bindValue(5, date);
-    sql.bindValue(6, heure);
-    sql.bindValue(7, server_id);
+    // conversion date
+    QDate dateObj = QDate::fromString(date, "dd/MM/yyyy");
+    QTime timeObj = QTime::fromString(heure, "HH:mm");
+
+    QString mysqlDate = dateObj.toString("yyyy-MM-dd");
+    QString mysqlTime = timeObj.toString("HH:mm:ss");
+
+    std::cout << "[*] Date convertie : " << mysqlDate.toStdString() << std::endl;
+    std::cout << "[*] Heure convertie : " << mysqlTime.toStdString() << std::endl;
+
+    sql.addBindValue(type);
+    sql.addBindValue(adresse);
+    sql.addBindValue(gravite);
+    sql.addBindValue(victimes);
+    sql.addBindValue(commentaire);
+    sql.addBindValue(mysqlDate);
+    sql.addBindValue(mysqlTime);
+    sql.addBindValue(server_id);
 
     if(!sql.exec())
     {
-        std::cout << "[X] Erreur SQL :" << sql.lastError().text().toStdString() << std::endl;
+        std::cout << "[X] Erreur SQL : " << sql.lastError().text().toStdString() << std::endl;
     }
     else
     {
