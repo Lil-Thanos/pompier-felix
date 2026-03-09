@@ -126,6 +126,12 @@ Le Serveur Caserne OPE est un logiciel serveur console (C++ et Qt) installé dan
 Image fonctionnement server lors de la reception d'une alerte:
   <img width="1003" height="377" alt="image" src="https://github.com/user-attachments/assets/fce7aa76-ad4d-4809-82f5-e3a97e0cc195" />
 
-### Table `alerte` de la base mariadb 
+### Structure packet header tcp
 
-
+```c++
+struct HeaderPacket {
+    uint32_t size;
+    uint16_t type;
+    uint16_t server_id;
+};
+```
