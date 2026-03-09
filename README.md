@@ -116,7 +116,7 @@ sinistres
 
 ## 📬 Serveur Caserne OPE
 
-Le **Serveur Caserne OPE** est un logiciel serveur console (C++ & Qt) installé dans chaque caserne. 
+Le Serveur Caserne OPE est un logiciel serveur console (C++ et Qt) installé dans chaque caserne.
 
 - 🔄 Fonctionne 24h/24
 - 📨 Reçoit les alertes d'intervention depuis le logiciel operateur
