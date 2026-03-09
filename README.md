@@ -58,58 +58,66 @@ L'interface permet à l'opérateur de :
 
 ## 🗃️ Structure de la base de données
 
-### `CasernesBZH.db` comprend 3 tables : 
+### `CasernesBZH.db` comprend 4 tables : 
 
 - casernes_tmp
+- interventions
 - servers
-- sinistre
+- sinistres
 
 #### Description des champs
 
-| Champ | Type | Description |
-|-------|------|-------------|
-| `id` | TEXT | Identifiant OpenStreetMap |
-| `name` | TEXT | Nom de la caserne |
-| `lat` | REAL | Latitude |
-| `lon` | REAL | Longitude |
-| `city` | TEXT | Ville |
-| `postcode` | TEXT | Code postal |
+| Champ      | Type | Description                        |
+| ---------- | ---- | ---------------------------------- |
+| `id`       | TEXT | Identifiant OpenStreetMap          |
+| `name`     | TEXT | Nom de la caserne                  |
+| `lat`      | REAL | Latitude                           |
+| `lon`      | REAL | Longitude                          |
+| `city`     | TEXT | Ville                              |
+| `postcode` | TEXT | Code postal                        |
 | `operator` | TEXT | Organisme opérateur (ex : SDIS 22) |
 
+| Champ              | Type    | Description                   |
+| ------------------ | ------- | ----------------------------- |
+| `id`               | INTEGER | Identifiant de l'intervention |
+| `adresse`          | TEXT    | Adresse de l'intervention     |
+| `casernes_assigne` | TEXT    | Casernes assignées            |
+| `type`             | TEXT    | Type d'intervention           |
+| `gravite`          | TEXT    | Gravité de l'intervention     |
+| `date`             | TEXT    | Date de l'intervention        |
+| `heure`            | TEXT    | Heure de l'intervention       |
+| `victimes`         | INTEGER | Nombre de victimes            |
+| `commentaire`      | TEXT    | Commentaire associé           |
+| `statut`           | TEXT    | Statut de l'intervention      |
 
+| Champ  | Type    | Description              |
+| ------ | ------- | ------------------------ |
+| `id`   | INTEGER | Identifiant du serveur   |
+| `ip`   | TEXT    | Adresse IP du serveur    |
+| `port` | INTEGER | Port d'écoute du serveur |
 
+| Champ         | Type     | Description               |
+| ------------- | -------- | ------------------------- |
+| `id`          | INTEGER  | Identifiant du sinistre   |
+| `type`        | TEXT     | Type de sinistre          |
+| `description` | TEXT     | Description du sinistre   |
+| `latitude`    | REAL     | Latitude du sinistre      |
+| `longitude`   | REAL     | Longitude du sinistre     |
+| `created_at`  | DATETIME | Date et heure de création |
 
 
 ## 📬 Serveur Caserne OPE
 
-Le **Serveur Caserne OPE** est un logiciel serveur installé dans chaque caserne.
+Le **Serveur Caserne OPE** est un logiciel serveur console (C++ & Qt) installé dans chaque caserne. 
 
 - 🔄 Fonctionne 24h/24
-- 📨 Reçoit les alertes d'intervention
+- 📨 Reçoit les alertes d'intervention depuis le logiciel operateur
 - 💾 Enregistre les alertes dans une base MariaDB
 - 🎛️ Permet une gestion locale des interventions
 
+Image fonctionnement server lors de la reception d'une alerte:
   <img width="1003" height="377" alt="image" src="https://github.com/user-attachments/assets/fce7aa76-ad4d-4809-82f5-e3a97e0cc195" />
 
+### Table `alerte` de la base mariadb 
 
-### Table `servers`
 
-Cette table associe une caserne à son serveur de réception d'alertes.
-
-```sql
-CREATE TABLE servers (
-    id INTEGER,
-    ip TEXT NOT NULL,
-    port INTEGER NOT NULL,
-    FOREIGN KEY (id) REFERENCES casernes_tmp(id)
-);
-
-```
-
-#### Description des champs
-
-| Champ | Type | Description |
-|-------|------|-------------|
-| `id` | INTEGER | Identifiant de la caserne |
-| `ip` | TEXT | Adresse IP du serveur |
-| `port` | INTEGER | Port d'écoute du serveur |
