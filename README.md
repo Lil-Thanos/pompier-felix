@@ -8,15 +8,14 @@ Une fois la caserne la plus proche identifiée, le logiciel transmet automatique
 
 ## 📌 Fonctionnalités
 
-- ✅ Import de données de casernes depuis OpenStreetMap
-- ✅ Extraction des données via Overpass Turbo
 - ✅ Stockage des casernes dans une base SQLite
 - ✅ Filtrage des casernes par département / SDIS (ex : SDIS 22)
-- ✅ Conversion des coordonnées latitude / longitude
+- ✅ Conversion des coordonnées du sinistre latitude / longitude à partir de l'adresse 
 - ✅ Calcul de la distance géographique avec la formule de Haversine
-- ✅ Interface graphique réalisée avec Qt Widgets et Qt Quick
+- ✅ Interface graphique réalisée avec Qt Quick
 - ✅ Affichage de la distance entre le sinistre et la caserne
 - ✅ Envoi d'une alerte d'intervention à la caserne la plus proche
+- ✅ Stockage des alerters "en cours" et "terminée" dans la BDD sqlite3
 
 ## 🗺️ Source des données
 
@@ -47,7 +46,7 @@ L'interface permet à l'opérateur de :
 
 - 📍 Déclarer un sinistre
 - 🔍 Calculer la caserne la plus proche
-- 📢 Envoyer une alerte d'intervention
+- 📢 Envoyer une alerte d'intervention à la caserne la plus proche
 - 💽 Visionnage des alertes "en cours" ou "terminée"
 
 
@@ -59,22 +58,11 @@ L'interface permet à l'opérateur de :
 
 ## 🗃️ Structure de la base de données
 
-### Table `casernes_tmp`
+### `CasernesBZH.db` comprend 3 tables : 
 
-Cette table contient les informations des casernes importées depuis OpenStreetMap.
-
-```sql
-CREATE TABLE casernes_tmp (
-    id TEXT PRIMARY KEY,
-    name TEXT,
-    lat REAL,
-    lon REAL,
-    city TEXT,
-    postcode TEXT,
-    operator TEXT
-);
-
-```
+- casernes_tmp
+- servers
+- sinistre
 
 #### Description des champs
 
@@ -88,9 +76,13 @@ CREATE TABLE casernes_tmp (
 | `postcode` | TEXT | Code postal |
 | `operator` | TEXT | Organisme opérateur (ex : SDIS 22) |
 
+
+
+
+
 ## 📬 Serveur Caserne OPE
 
-Le **Serveur Caserne OPE** est une application installée dans chaque caserne.
+Le **Serveur Caserne OPE** est un logiciel serveur installé dans chaque caserne.
 
 - 🔄 Fonctionne 24h/24
 - 📨 Reçoit les alertes d'intervention
