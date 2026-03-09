@@ -47,3 +47,17 @@ CREATE TABLE casernes_tmp (
     postcode TEXT,
     operator TEXT
 );
+
+# 📬 Serveur Caserne OPE
+
+Logiciel Serveur côté caserne (tourne h24). reçois les alertes et les enregistres dans la BDD mariadb. 
+
+```sql
+CREATE TABLE servers (
+    id INTEGER,
+    ip TEXT NOT NULL,
+    port INTEGER NOT NULL,
+    FOREIGN KEY (id) REFERENCES casernes_tmp(id)
+);
+
+<img width="1919" height="244" alt="image" src="https://github.com/user-attachments/assets/7c8fd230-9a11-43f5-a715-c3504e15992e" />
