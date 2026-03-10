@@ -10,8 +10,7 @@ void affichageServer()
     std::cout << "|         Server Caserne Pompier Felix                 |" << std::endl;
     std::cout << "+======================================================+" << std::endl;
     std::cout << std::endl;
-    std::cout << "[-] Ecoute sur le port : " << _PORT_SERVER     << std::endl;
-    std::cout << "[-] Attente de connexion..." << std::endl;
+    // std::cout << "[-] Attente de connexion..." << std::endl;
 }
 
 int main(int argc, char *argv[])

@@ -2,11 +2,11 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QDebug>
+#include <QIcon>
 
 #include <QSslSocket>
 #include <QSslConfiguration>
 
-#include "src/superviseurope.h"
 #include "src/superviseurope.h"
 #include "src/interventionmodel.h"
 
@@ -24,6 +24,8 @@ int main(int argc, char *argv[])
 
     // --- Qt Quick Application ---
     QGuiApplication app(argc, argv);
+    //app.setWindowIcon(QIcon(":/home/felix/Documents/projet/Pompier-Qt-Quick/ui/icons/18.png"));
+
     QQmlApplicationEngine engine;
 
     // --- Backend instance ---

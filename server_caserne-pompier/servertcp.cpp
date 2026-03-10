@@ -139,8 +139,8 @@ void ServerTcp::enregistrementBDD(const QString& type, const QString& adresse, i
     QString mysqlDate = dateObj.toString("yyyy-MM-dd");
     QString mysqlTime = timeObj.toString("HH:mm:ss");
 
-    std::cout << "[*] Date convertie : " << mysqlDate.toStdString() << std::endl;
-    std::cout << "[*] Heure convertie : " << mysqlTime.toStdString() << std::endl;
+    // std::cout << "[*] Date convertie : " << mysqlDate.toStdString() << std::endl;
+    // std::cout << "[*] Heure convertie : " << mysqlTime.toStdString() << std::endl;
 
     sql.addBindValue(type);
     sql.addBindValue(adresse);
