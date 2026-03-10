@@ -1,49 +1,140 @@
-# 🚒 Superviseur OPE – Localisation de la caserne la plus proche
+# ☎️ Logiciel Superviseur OPE
 
-Application desktop développée en **C++ avec Qt** permettant de déterminer la **caserne de pompiers la plus proche d’un sinistre**, à partir de données **OpenStreetMap** stockées en **SQLite** et d’un calcul de distance via la **formule de Haversine**.
+**Superviseur OPE** est un logiciel desktop développé en **C++** avec **Qt** permettant de déterminer la caserne de pompiers la plus proche d'un sinistre.
 
----
+L'application utilise des données issues de **OpenStreetMap**, stockées dans une base **SQLite**, et calcule les distances géographiques grâce à la formule de **Haversine**.
+
+Une fois la caserne la plus proche identifiée, le logiciel transmet automatiquement une alerte d'intervention au serveur de la caserne concernée.
 
 ## 📌 Fonctionnalités
 
-- Import de données de casernes issues d’OpenStreetMap (Overpass Turbo)
-- Stockage des casernes dans une base de données **SQLite**
-- Filtrage des casernes par département (ex : SDIS 22)
-- Conversion latitude / longitude
-- Calcul de la distance géographique (Haversine)
-- Interface graphique avec **Qt Widgets** et **Qt Quick**
-- Affichage de la distance entre un sinistre et la caserne
-
----
+- ✅ Stockage des casernes dans une base SQLite
+- ✅ Filtrage des casernes par département / SDIS (ex : SDIS 22)
+- ✅ Conversion des coordonnées du sinistre latitude / longitude à partir de l'adresse 
+- ✅ Calcul de la distance géographique avec la formule de Haversine
+- ✅ Interface graphique réalisée avec Qt Quick
+- ✅ Affichage de la distance entre le sinistre et la caserne
+- ✅ Envoi d'une alerte d'intervention à la caserne la plus proche
+- ✅ Stockage des alerters "en cours" et "terminée" dans la BDD sqlite3
 
 ## 🗺️ Source des données
 
-Les données proviennent de **OpenStreetMap** via **Overpass Turbo**.
+Les données des casernes proviennent de **OpenStreetMap** et sont récupérées via **Overpass Turbo**.
 
-Champs utilisés :
-- `@id`
-- `name`
-- `lat`
-- `lon`
-- `addr:city`
-- `addr:postcode`
-- `operator` (ex : SDIS 22, SDIS 29, etc.)
+### Champs utilisés
 
-Les données sont exportées au format **CSV**, nettoyées puis importées dans SQLite.
+| Champ | Description |
+|-------|-------------|
+| `@id` | Identifiant OpenStreetMap |
+| `name` | Nom de la caserne |
+| `lat` | Latitude |
+| `lon` | Longitude |
+| `addr:city` | Ville |
+| `addr:postcode` | Code postal |
+| `operator` | Opérateur (ex : SDIS 22, SDIS 29, etc.) |
 
----
+### Processus d'import
+
+1. Extraction via Overpass Turbo
+2. Export au format CSV
+3. Nettoyage des données
+4. Import dans la base SQLite
+
+## 🖥️ Interface opérateur
+
+L'interface permet à l'opérateur de :
+
+- 📍 Déclarer un sinistre
+- 🔍 Calculer la caserne la plus proche
+- 📢 Envoyer une alerte d'intervention à la caserne la plus proche
+- 💽 Visionnage des alertes "en cours" ou "terminée"
+
+
+### Aperçu de l'application
+
+![Interface opérateur](https://github.com/user-attachments/assets/b9b63612-1b01-403c-aa14-1ec4f9aaeaed)
+<img width="1919" height="1027" alt="image" src="https://github.com/user-attachments/assets/084e49b2-d347-49d6-abe3-c75820c8db4a" />
+
 
 ## 🗃️ Structure de la base de données
 
-### Table `casernes_tmp`
+### `CasernesBZH.db` comprend 4 tables : 
 
-```sql
-CREATE TABLE casernes_tmp (
-    id TEXT PRIMARY KEY,
-    name TEXT,
-    lat REAL,
-    lon REAL,
-    city TEXT,
-    postcode TEXT,
-    operator TEXT
-);
+- casernes_tmp
+- interventions
+- servers
+- sinistres
+
+#### Description des champs
+
+casernes_tmp
+
+| Champ      | Type | Description                        |
+| ---------- | ---- | ---------------------------------- |
+| `id`       | TEXT | Identifiant OpenStreetMap          |
+| `name`     | TEXT | Nom de la caserne                  |
+| `lat`      | REAL | Latitude                           |
+| `lon`      | REAL | Longitude                          |
+| `city`     | TEXT | Ville                              |
+| `postcode` | TEXT | Code postal                        |
+| `operator` | TEXT | Organisme opérateur (ex : SDIS 22) |
+
+interventions
+
+| Champ              | Type    | Description                   |
+| ------------------ | ------- | ----------------------------- |
+| `id`               | INTEGER | Identifiant de l'intervention |
+| `adresse`          | TEXT    | Adresse de l'intervention     |
+| `casernes_assigne` | TEXT    | Casernes assignées            |
+| `type`             | TEXT    | Type d'intervention           |
+| `gravite`          | TEXT    | Gravité de l'intervention     |
+| `date`             | TEXT    | Date de l'intervention        |
+| `heure`            | TEXT    | Heure de l'intervention       |
+| `victimes`         | INTEGER | Nombre de victimes            |
+| `commentaire`      | TEXT    | Commentaire associé           |
+| `statut`           | TEXT    | Statut de l'intervention      |
+
+servers
+
+| Champ  | Type    | Description              |
+| ------ | ------- | ------------------------ |
+| `id`   | INTEGER | Identifiant du serveur   |
+| `ip`   | TEXT    | Adresse IP du serveur    |
+| `port` | INTEGER | Port d'écoute du serveur |
+
+sinistres
+
+| Champ         | Type     | Description               |
+| ------------- | -------- | ------------------------- |
+| `id`          | INTEGER  | Identifiant du sinistre   |
+| `type`        | TEXT     | Type de sinistre          |
+| `description` | TEXT     | Description du sinistre   |
+| `latitude`    | REAL     | Latitude du sinistre      |
+| `longitude`   | REAL     | Longitude du sinistre     |
+| `created_at`  | DATETIME | Date et heure de création |
+
+
+## 📬 Serveur Caserne OPE
+
+Le Serveur Caserne OPE est un logiciel serveur console (C++ et Qt) installé dans chaque caserne.
+
+- 🔄 Fonctionne 24h/24
+- 📨 Reçoit les alertes d'intervention depuis le logiciel operateur
+- 💾 Enregistre les alertes dans une base MariaDB
+- 🎛️ Permet une gestion locale des interventions
+
+Image fonctionnement server lors de la reception d'une alerte:
+<img width="1087" height="404" alt="image" src="https://github.com/user-attachments/assets/becd5525-742f-4c84-93e0-9beae948b44c" />
+
+
+## ✏️ Structure HeaderPacket pour TCP
+
+Le struct HeaderPacket est utilsé pour définir l’en-tête d’un paquet TCP. L’idée est que chaque paquet envoyé sur le réseau commence par ce header, qui contient les informations nécessaires pour que le destinataire (serveur de la caserne) comprenne comment traiter le reste des données (le payload).
+
+```c++
+struct HeaderPacket {
+    uint32_t size;       // Taille du payload (données JSON) en octets
+    uint16_t type;       // Type de paquet (ex : intervention, sinistre, statut serveur…)
+    uint16_t server_id;  // Identifiant du centre d’appel émetteur (0 = phase de test)
+};
+```

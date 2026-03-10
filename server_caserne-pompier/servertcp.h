@@ -1,4 +1,4 @@
-#ifdef _WIN32
+#ifdef _WIN32            // gestion Windows / linux (inutile)
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #else
