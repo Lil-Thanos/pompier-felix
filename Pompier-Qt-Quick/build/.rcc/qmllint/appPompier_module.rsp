@@ -1,0 +1,12 @@
+-I
+/home/felix/Documents/projet/Pompier-Qt-Quick/build
+-I
+/home/felix/Qt/6.9.3/gcc_64/qml
+--resource
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/.qt/rcc/qmake_Pompier.qrc
+--resource
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/.qt/rcc/appPompier_raw_qml_0.qrc
+--resource
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/.qt/rcc/appPompier_raw_qml_0_extra_qmldirs.qrc
+--module
+Pompier

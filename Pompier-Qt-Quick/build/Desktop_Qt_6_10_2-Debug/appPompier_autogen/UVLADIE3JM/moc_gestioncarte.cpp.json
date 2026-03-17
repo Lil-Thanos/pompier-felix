@@ -1,0 +1,27 @@
+{
+    "classes": [
+        {
+            "className": "InterventionsManager",
+            "lineNumber": 17,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 24,
+                    "name": "getEnCoursInterventions",
+                    "returnType": "QVariantList"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "InterventionsManager",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gestioncarte.h",
+    "outputRevision": 69
+}

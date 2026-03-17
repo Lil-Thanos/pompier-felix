@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.16)
-
 project(PompierQtQuick VERSION 0.1 LANGUAGES CXX)
 
 # C++17
@@ -12,6 +11,10 @@ find_package(Qt6 REQUIRED COMPONENTS
     QuickControls2
     Sql
     Network
+    # WebEngineQuick   # Décommenter après installation via Qt Maintenance Tool
+    # WebChannel       # Décommenter après installation via Qt Maintenance Tool
+    Location
+    Positioning
 )
 
 qt_standard_project_setup(REQUIRES 6.8)
@@ -19,16 +22,6 @@ qt_standard_project_setup(REQUIRES 6.8)
 # --- Exécutable ---
 qt_add_executable(appPompier
     main.cpp
-)
-
-# --- Backend C++ ---
-set(BACKEND_SOURCES
-    src/superviseurope.cpp
-    src/superviseurope.h
-    src/ficheurgence.cpp
-    src/ficheurgence.h
-    src/geocoding.cpp
-    src/geocoding.h
 )
 
 # --- QML module ---
@@ -41,6 +34,8 @@ qt_add_qml_module(appPompier
         ui/Header.qml
         ui/Tabs.qml
         ui/InterventionForm.qml
+        ui/InterventionsList.qml
+        ui/GestionCarte.qml
         ui/InfoCard.qml
         ui/StatusBadge.qml
 
@@ -49,14 +44,25 @@ qt_add_qml_module(appPompier
         ui/icons/menu.svg
         ui/icons/check.svg
         ui/icons/clock.svg
+        # ui/map.html   # Décommenter avec WebEngine
 
     SOURCES
-        ${BACKEND_SOURCES}
-        QML_FILES ui/InterventionsList.qml ui/EmptyTab.qml
-        SOURCES src/interventionmodel.h src/interventionmodel.cpp
-        SOURCES src/sendserver.h src/sendserver.cpp
-)
+        src/superviseurope.h
+        src/superviseurope.cpp
+        src/ficheurgence.h
+        src/ficheurgence.cpp
+        src/geocoding.h
+        src/geocoding.cpp
+        src/interventionmodel.h
+        src/interventionmodel.cpp
+        src/sendserver.h
+        src/sendserver.cpp
+        src/gestioncarte.h
+        src/gestioncarte.cpp
+        QML_FILES  ui/MarkerItem.qml
 
+
+)
 
 # --- Link Qt libs ---
 target_link_libraries(appPompier
@@ -65,6 +71,10 @@ target_link_libraries(appPompier
         Qt6::QuickControls2
         Qt6::Sql
         Qt6::Network
+        # Qt6::WebEngineQuick   # Décommenter après installation
+        # Qt6::WebChannel       # Décommenter après installation
+        Qt6::Location
+        Qt6::Positioning
 )
 
 # --- App properties ---

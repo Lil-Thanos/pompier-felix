@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body, #map { width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+  <script>
+    // Initialise la carte centrée sur la France
+    const map = L.map('map').setView([46.603354, 1.888334], 6);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+      maxZoom: 19
+    }).addTo(map);
+
+    const markers = [];
+
+    // Appelé depuis Qt/C++ pour charger les points
+    function loadPoints(points) {
+      // Nettoie les anciens markers
+      markers.forEach(m => map.removeLayer(m));
+      markers.length = 0;
+
+      points.forEach(p => {
+        const marker = L.circleMarker([p.lat, p.lng], {
+          radius: 8,
+          fillColor: "#e74c3c",
+          color: "#c0392b",
+          weight: 2,
+          opacity: 1,
+          fillOpacity: 0.85
+        }).addTo(map);
+
+        if (p.label) {
+          marker.bindPopup(`<b>${p.label}</b><br>${p.lat.toFixed(4)}, ${p.lng.toFixed(4)}`);
+        }
+        markers.push(marker);
+      });
+
+      // Zoom automatique sur les points si présents
+      if (markers.length > 0) {
+        const group = L.featureGroup(markers);
+        map.fitBounds(group.getBounds().pad(0.1));
+      }
+    }
+
+    // Connexion QWebChannel (communication C++ ↔ JS)
+    new QWebChannel(qt.webChannelTransport, channel => {
+      const bridge = channel.objects.bridge;
+      bridge.pointsReady.connect(loadPoints);
+      bridge.requestPoints(); // demande les données au démarrage
+    });
+  </script>
+</body>
+</html>

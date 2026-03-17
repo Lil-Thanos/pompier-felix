@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/qt/qml/Pompier/">
+    <file alias="ui/App.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/App.qml</file>
+    <file alias="ui/Header.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/Header.qml</file>
+    <file alias="ui/Tabs.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/Tabs.qml</file>
+    <file alias="ui/InterventionForm.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/InterventionForm.qml</file>
+    <file alias="ui/InterventionsList.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/InterventionsList.qml</file>
+    <file alias="ui/GestionCarte.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/GestionCarte.qml</file>
+    <file alias="ui/InfoCard.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/InfoCard.qml</file>
+    <file alias="ui/StatusBadge.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/StatusBadge.qml</file>
+    <file alias="ui/MarkerItem.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/MarkerItem.qml</file>
+  </qresource>
+</RCC>
+

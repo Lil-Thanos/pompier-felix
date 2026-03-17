@@ -1,0 +1,40 @@
+{
+    "classes": [
+        {
+            "className": "MapBridge",
+            "lineNumber": 8,
+            "object": true,
+            "qualifiedClassName": "MapBridge",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "points",
+                            "type": "QVariantList"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "pointsReady",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "requestPoints",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "mapbridge.h",
+    "outputRevision": 69
+}

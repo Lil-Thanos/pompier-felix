@@ -1,0 +1,33 @@
+{
+    "classes": [
+        {
+            "className": "FicheUrgence",
+            "lineNumber": 12,
+            "object": true,
+            "qualifiedClassName": "FicheUrgence",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "ok",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 54,
+                    "name": "statutBDD",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ficheurgence.h",
+    "outputRevision": 69
+}

@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "MarkerModel",
+            "lineNumber": 16,
+            "object": true,
+            "qualifiedClassName": "MarkerModel",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gestioncarte.h",
+    "outputRevision": 69
+}

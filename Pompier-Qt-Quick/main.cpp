@@ -10,6 +10,8 @@
 #include "src/superviseurope.h"
 #include "src/interventionmodel.h"
 
+#include "src/gestioncarte.h"
+
 int main(int argc, char *argv[])
 {
     // --- SSL CONFIGURATION ---
@@ -31,6 +33,15 @@ int main(int argc, char *argv[])
     // --- Backend instance ---
     SuperviseurOPE superviseur;
     engine.rootContext()->setContextProperty("superviseur", &superviseur);
+
+    // --- Gestion Carte ---
+    InterventionsManager manager;
+    engine.rootContext()->setContextProperty("interventionsManager", &manager);
+
+    //--- Gestion carte ---
+    // PointModel pointModel;
+    // pointModel.loadFromDatabase();
+    // engine.rootContext()->setContextProperty("pointModel", &pointModel);
 
     QObject::connect(
         &engine,

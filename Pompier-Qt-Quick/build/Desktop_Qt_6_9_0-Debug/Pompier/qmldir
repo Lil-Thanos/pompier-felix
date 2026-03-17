@@ -5,8 +5,8 @@ App 1.0 ui/App.qml
 Header 1.0 ui/Header.qml
 Tabs 1.0 ui/Tabs.qml
 InterventionForm 1.0 ui/InterventionForm.qml
-InfoCard 1.0 ui/InfoCard.qml
-StatusBadge 1.0 ui/StatusBadge.qml
 InterventionsList 1.0 ui/InterventionsList.qml
 EmptyTab 1.0 ui/EmptyTab.qml
+InfoCard 1.0 ui/InfoCard.qml
+StatusBadge 1.0 ui/StatusBadge.qml
 

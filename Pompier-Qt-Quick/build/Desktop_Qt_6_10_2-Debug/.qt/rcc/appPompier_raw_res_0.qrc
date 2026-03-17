@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/Pompier/">
+    <file alias="ui/icons/help.svg">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/icons/help.svg</file>
+    <file alias="ui/icons/menu.svg">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/icons/menu.svg</file>
+    <file alias="ui/icons/check.svg">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/icons/check.svg</file>
+    <file alias="ui/icons/clock.svg">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/icons/clock.svg</file>
+  </qresource>
+</RCC>
+

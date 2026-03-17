@@ -1,0 +1,52 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 433,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 20,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot access value for name enService",
+                        "functionName": "color",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 27
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 19,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "Cannot access value for name enService",
+                        "functionName": "text",
+                        "line": 34
+                    }
+                ],
+                "filePath": "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/StatusBadge.qml"
+            }
+        ],
+        "moduleId": "Pompier(appPompier)"
+    }
+]

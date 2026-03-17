@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 393,
+                        "durationMicroseconds": 292,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 13
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 32,
+                        "durationMicroseconds": 45,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 16
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 35,
+                        "durationMicroseconds": 49,
                         "errorMessage": "Cannot access value for name enService",
                         "functionName": "color",
                         "line": 23
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 59,
                         "errorMessage": "",
                         "functionName": "loops",
                         "line": 27
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Cannot access value for name enService",
                         "functionName": "text",
                         "line": 34

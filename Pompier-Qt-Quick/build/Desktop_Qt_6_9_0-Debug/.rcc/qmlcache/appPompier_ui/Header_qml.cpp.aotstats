@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 59,
+                        "durationMicroseconds": 68,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 22
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 32,
+                        "durationMicroseconds": 33,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 72
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 154,
+                        "durationMicroseconds": 162,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 79
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 35,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 78
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 169,
+                        "durationMicroseconds": 179,
                         "errorMessage": "",
                         "functionName": "onTriggered",
                         "line": 88
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 27,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 104
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 114,
+                        "durationMicroseconds": 117,
                         "errorMessage": "Cannot access value for name Image",
                         "functionName": "fillMode",
                         "line": 116
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 17,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 127
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 95,
                         "errorMessage": "Cannot access value for name Image",
                         "functionName": "fillMode",
                         "line": 139

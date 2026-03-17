@@ -1,0 +1,191 @@
+{
+    "classes": [
+        {
+            "className": "SuperviseurOPE",
+            "lineNumber": 16,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rue",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 24,
+                    "name": "getAdresse",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "type_intervention",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 6,
+                    "lineNumber": 25,
+                    "name": "getType",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "niveau_gravite",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 7,
+                    "lineNumber": 26,
+                    "name": "getGravite",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "nb_victime",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 8,
+                    "lineNumber": 27,
+                    "name": "getNbVictime",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commentaire",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 9,
+                    "lineNumber": 29,
+                    "name": "getCommentaire",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "date",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "heure",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 10,
+                    "lineNumber": 30,
+                    "name": "getHeure",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "lineNumber": 32,
+                    "name": "recalculerDistance",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "lineNumber": 33,
+                    "name": "preparerEnregistrementBDD",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "SuperviseurOPE",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "distance",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 39,
+                    "name": "distanceMinCalculee",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 40,
+                    "name": "messageInfo",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "temps_affichage",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 41,
+                    "name": "afficherTempsTrajet",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "code_postal",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "adresse_complete",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 44,
+                    "name": "getLonLatGeocoding",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 4,
+                    "lineNumber": 45,
+                    "name": "calculerDistanceMin",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "superviseurope.h",
+    "outputRevision": 69
+}

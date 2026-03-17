@@ -10,14 +10,14 @@ set(src_and_dest_list
     "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier/ui/Tabs.qml"
     "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/InterventionForm.qml"
     "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier/ui/InterventionForm.qml"
-    "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/InfoCard.qml"
-    "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier/ui/InfoCard.qml"
-    "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/StatusBadge.qml"
-    "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier/ui/StatusBadge.qml"
     "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/InterventionsList.qml"
     "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier/ui/InterventionsList.qml"
     "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/EmptyTab.qml"
     "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier/ui/EmptyTab.qml"
+    "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/InfoCard.qml"
+    "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier/ui/InfoCard.qml"
+    "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/StatusBadge.qml"
+    "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/Pompier/ui/StatusBadge.qml"
 
 )
 set(timestamp_file "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_9_0-Debug/.qt/appPompier_qml.txt")

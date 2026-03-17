@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 18
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 14,
+                        "durationMicroseconds": 13,
                         "errorMessage": "Cannot retrieve a non-object type by ID: appWindow",
                         "functionName": "activeTab",
                         "line": 32
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Cannot retrieve a non-object type by ID: appWindow",
                         "functionName": "currentIndex",
                         "line": 41
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 73,
+                        "durationMicroseconds": 74,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 58
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 55,
+                        "durationMicroseconds": 60,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 65
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 35,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 74
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 55,
                         "errorMessage": "Cannot access value for name superviseur",
                         "functionName": "target",
                         "line": 112
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 25,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 134
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 40,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 92,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "model",
                         "line": 140
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 34,
+                        "durationMicroseconds": 35,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 142
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 47,
-                        "durationMicroseconds": 190,
+                        "durationMicroseconds": 182,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 149
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 59,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 22,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 148
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 19,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 165
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 56,
-                        "durationMicroseconds": 98,
+                        "durationMicroseconds": 106,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 190
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 36,
+                        "durationMicroseconds": 38,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
                         "line": 226
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 30,
+                        "durationMicroseconds": 32,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
                         "line": 233
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 44,
+                        "durationMicroseconds": 51,
                         "errorMessage": "Cannot access value for name Qt",
                         "functionName": "alignment",
                         "line": 265
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 5,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "centerIn",
                         "line": 271
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 34,
-                        "durationMicroseconds": 11,
+                        "durationMicroseconds": 14,
                         "errorMessage": "Cannot access value for name errorDialog",
                         "functionName": "running",
                         "line": 279
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 91,
-                        "durationMicroseconds": 32,
+                        "durationMicroseconds": 48,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
                         "line": 280
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 148,
+                        "durationMicroseconds": 157,
                         "errorMessage": "method getContext cannot be resolved.",
                         "functionName": "onPaint",
                         "line": 291
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 34,
-                        "durationMicroseconds": 11,
+                        "durationMicroseconds": 10,
                         "errorMessage": "Cannot access value for name errorDialog",
                         "functionName": "running",
                         "line": 312
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 38,
-                        "durationMicroseconds": 36,
+                        "durationMicroseconds": 32,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
                         "line": 316
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 94,
+                        "durationMicroseconds": 96,
                         "errorMessage": "Cannot access value for name Qt",
                         "functionName": "alignment",
                         "line": 323
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 102,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "wrapMode",
                         "line": 345
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 42,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 88,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 348
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 3,
+                        "durationMicroseconds": 4,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "centerIn",
                         "line": 341
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Cannot access value for name okButton",
                         "functionName": "text",
                         "line": 362
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 42,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 94,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 366
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 40,
-                        "durationMicroseconds": 80,
+                        "durationMicroseconds": 81,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 367
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 34,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 82,
                         "errorMessage": "Cannot access value for name Font",
                         "functionName": "weight",
                         "line": 364
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 34,
                         "errorMessage": "Cannot access value for name okButton",
                         "functionName": "color",
                         "line": 372
@@ -390,7 +390,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 38,
-                        "durationMicroseconds": 19,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Cannot access value for name okButton",
                         "functionName": "shadowColor",
                         "line": 381
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 52,
+                        "durationMicroseconds": 53,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "onCompleted",
                         "line": 399
