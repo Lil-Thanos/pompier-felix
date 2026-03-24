@@ -13,6 +13,14 @@ Item {
         }
     }
 
+    function reloadMarkers() {
+        map.clearMapItems()
+        urgenceCount = 0
+        attenteCount = 0
+        normalCount = 0
+        loadMarkers()
+    }
+
     Rectangle {
         anchors.fill: parent
         color: "white"
@@ -55,14 +63,14 @@ Item {
                             ]
                             delegate: Rectangle {
                                 width: 72; height: 28; radius: 6
-                                color: Qt.rgba(0,0,0,0.2)
+                                color: "white" /*Qt.rgba(0,0,0,0.2)*/
                                 border.color: modelData.color; border.width: 1
                                 RowLayout {
                                     anchors.centerIn: parent; spacing: 4
                                     Rectangle { width: 8; height: 8; radius: 4; color: modelData.color }
                                     Text {
                                         text: modelData.label
-                                        font.pixelSize: 11; color: "white"
+                                        font.pixelSize: 11; color: "#374151" //"black"
                                     }
                                 }
                             }
@@ -189,12 +197,12 @@ Item {
 
         urgenceCount = urg; attenteCount = att; normalCount = nor
 
-        for (var key in positions) {
-            var list = positions[key]
-            var color = "#F39C12"
+        for (var key2 in positions) {
+            var list = positions[key2]
+            var color = "#27AE60"
             for (var j = 0; j < list.length; j++) {
                 if (list[j].gravite === "Urgence") { color = "#E74C3C"; break }
-                else if (list[j].gravite === "Normal") color = "#27AE60"
+                else if (list[j].gravite === "Normal") color = "#F39C12"
             }
             var marker = markerComponent.createObject(map, {
                 coordinate: QtPositioning.coordinate(list[0].lat, list[0].lon),

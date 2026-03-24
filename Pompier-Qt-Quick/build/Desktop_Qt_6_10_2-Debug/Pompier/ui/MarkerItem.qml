@@ -65,7 +65,7 @@ MapQuickItem {
                                     anchors { left: parent.left; top: parent.top; bottom: parent.bottom }
                                     width: 4
                                     color: modelData.gravite === "Urgence" ? "#E74C3C"
-                                           : modelData.gravite === "Normal"  ? "#27AE60" : "#F39C12"
+                                           : modelData.gravite === "Normal"  ? "#F39C12" : "#27AE60"
                                 }
                                 Column {
                                     anchors { left: parent.left; leftMargin: 12; verticalCenter: parent.verticalCenter }

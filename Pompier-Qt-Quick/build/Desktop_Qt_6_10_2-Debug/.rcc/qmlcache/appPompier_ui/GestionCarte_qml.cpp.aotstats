@@ -6,19 +6,27 @@
                 {
                     "entries": [
                         {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "onVisibleChanged",
                             "line": 10,
-                            "message": "method reloadMarkers cannot be resolved."
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 5,
+                            "durationMicroseconds": 0,
+                            "functionName": "reloadMarkers",
+                            "line": 16,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 5,
                             "durationMicroseconds": 2000,
                             "functionName": "loadMarkers",
-                            "line": 173,
+                            "line": 181,
                             "message": "Cannot access value for name interventionsManager"
                         },
                         {
@@ -26,7 +34,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 17,
+                            "line": 25,
                             "message": ""
                         },
                         {
@@ -34,7 +42,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 22,
+                            "line": 30,
                             "message": ""
                         },
                         {
@@ -42,7 +50,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 34,
+                            "line": 42,
                             "message": ""
                         },
                         {
@@ -50,7 +58,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 35,
+                            "line": 43,
                             "message": "Cannot load property color from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/GestionCarte.qml)::parent with type QQuickItem."
                         },
                         {
@@ -58,7 +66,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 33,
+                            "line": 41,
                             "message": ""
                         },
                         {
@@ -66,7 +74,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 38,
+                            "line": 46,
                             "message": ""
                         },
                         {
@@ -74,23 +82,15 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 51,
+                            "line": 59,
                             "message": "Cannot access value for name urgenceCount"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 40,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 58,
-                            "message": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant"
                         },
                         {
                             "codegenResult": 2,
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 59,
+                            "line": 67,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 55,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 61,
+                            "line": 69,
                             "message": ""
                         },
                         {
@@ -106,7 +106,7 @@
                             "column": 88,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 62,
+                            "line": 70,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -114,7 +114,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 64,
+                            "line": 72,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -122,7 +122,7 @@
                             "column": 51,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 74,
+                            "line": 82,
                             "message": ""
                         },
                         {
@@ -130,7 +130,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "plugin",
-                            "line": 143,
+                            "line": 151,
                             "message": ""
                         },
                         {
@@ -138,7 +138,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "center",
-                            "line": 144,
+                            "line": 152,
                             "message": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method coordinate, returning QGeoCoordinate -> call to method coordinate, returning QGeoCoordinate"
                         },
                         {
@@ -146,7 +146,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 142,
+                            "line": 150,
                             "message": ""
                         },
                         {
@@ -154,7 +154,7 @@
                             "column": 46,
                             "durationMicroseconds": 0,
                             "functionName": "mapRef",
-                            "line": 149,
+                            "line": 157,
                             "message": "Cannot access value for name map"
                         },
                         {
@@ -162,7 +162,7 @@
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "onCompleted",
-                            "line": 152,
+                            "line": 160,
                             "message": "method loadMarkers cannot be resolved."
                         },
                         {
@@ -170,7 +170,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 160,
+                            "line": 168,
                             "message": ""
                         },
                         {
@@ -178,7 +178,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 158,
+                            "line": 166,
                             "message": ""
                         },
                         {
@@ -186,7 +186,7 @@
                             "column": 72,
                             "durationMicroseconds": 0,
                             "functionName": "running",
-                            "line": 161,
+                            "line": 169,
                             "message": "Could not find property \"running\"."
                         },
                         {
@@ -194,7 +194,7 @@
                             "column": 55,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 161,
+                            "line": 169,
                             "message": "Could not find property \"centerIn\"."
                         }
                     ],
