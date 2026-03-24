@@ -54,6 +54,7 @@ L'interface permet à l'opérateur de :
 
 ![Interface opérateur](https://github.com/user-attachments/assets/b9b63612-1b01-403c-aa14-1ec4f9aaeaed)
 <img width="1919" height="1027" alt="image" src="https://github.com/user-attachments/assets/084e49b2-d347-49d6-abe3-c75820c8db4a" />
+<img width="1919" height="1034" alt="image" src="https://github.com/user-attachments/assets/1b4cffab-75fb-4168-88c2-e41f5139cd13" />
 
 
 ## 🗃️ Structure de la base de données
