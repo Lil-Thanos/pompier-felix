@@ -44,7 +44,7 @@ qt_add_qml_module(appPompier
         ui/icons/menu.svg
         ui/icons/check.svg
         ui/icons/clock.svg
-        # ui/map.html   # Décommenter avec WebEngine
+        # ui/icons/Felix_le_pompier_et_incendie.png
 
     SOURCES
         src/superviseurope.h
@@ -62,6 +62,12 @@ qt_add_qml_module(appPompier
         QML_FILES  ui/MarkerItem.qml
 
 
+)
+
+qt_add_resources(appPompier "app_resources"
+    PREFIX "/"
+    FILES
+        ui/icons/Felix_le_pompier_et_incendie.png
 )
 
 # --- Link Qt libs ---

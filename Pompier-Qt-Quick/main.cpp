@@ -24,9 +24,14 @@ int main(int argc, char *argv[])
     sslConfig.setProtocol(QSsl::TlsV1_2OrLater);
     QSslConfiguration::setDefaultConfiguration(sslConfig);
 
+
     // --- Qt Quick Application ---
     QGuiApplication app(argc, argv);
     //app.setWindowIcon(QIcon(":/home/felix/Documents/projet/Pompier-Qt-Quick/ui/icons/18.png"));
+
+    //--- Icon App ---
+    app.setWindowIcon(QIcon(":/ui/icons/Felix_le_pompier_et_incendie.png"));
+    qDebug() << "Icon null?" << app.windowIcon().isNull();
 
     QQmlApplicationEngine engine;
 

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="ui/icons/Felix_le_pompier_et_incendie.png">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/icons/Felix_le_pompier_et_incendie.png</file>
+  </qresource>
+</RCC>
+

@@ -1016,6 +1016,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   ".qt/rcc/appPompier_raw_res_0.qrc"
   "Pompier/ui/qmldir"
   ".qt/rcc/appPompier_raw_qml_0_extra_qmldirs.qrc"
+  ".qt/rcc/app_resources.qrc"
   "Pompier/qmldir"
   "CMakeFiles/appPompier_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"

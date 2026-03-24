@@ -8,7 +8,7 @@ InterventionsManager::InterventionsManager(QObject* parent) : QObject(parent)
 {
     // Se connecter à la base SQLite
     m_db = QSqlDatabase::addDatabase("QSQLITE");
-    m_db.setDatabaseName("/home/felix/Documents/testCarten9999/CasernesBZH.db");
+    m_db.setDatabaseName("/home/felix/Documents/projet/CasernesBZH.db");
 
     if (!m_db.open()) {
         qWarning() << "Erreur ouverture BDD:" << m_db.lastError().text();

@@ -15,6 +15,8 @@
 /home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.qt/rcc/appPompier_raw_res_0.qrc
 --resource
 /home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.qt/rcc/appPompier_raw_qml_0_extra_qmldirs.qrc
+--resource
+/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.qt/rcc/app_resources.qrc
 /home/felix/Documents/projet/Pompier-Qt-Quick/ui/App.qml
 /home/felix/Documents/projet/Pompier-Qt-Quick/ui/Header.qml
 /home/felix/Documents/projet/Pompier-Qt-Quick/ui/Tabs.qml
