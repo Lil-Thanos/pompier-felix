@@ -44,6 +44,7 @@
 			"qt6_add_resources",
 			"qt6_target_qml_sources",
 			"_qt_internal_target_enable_qmlcachegen",
+			"qt_add_resources",
 			"_qt_internal_expose_deferred_files_to_ide"
 		],
 		"files" : 
@@ -99,13 +100,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 88,
+				"line" : 97,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 68,
+				"line" : 77,
 				"parent" : 0
 			},
 			{
@@ -580,33 +581,33 @@
 				"parent" : 68
 			},
 			{
-				"command" : 31,
+				"command" : 27,
 				"file" : 14,
-				"line" : 3839,
+				"line" : 3554,
 				"parent" : 68
 			},
 			{
-				"command" : 30,
-				"file" : 0,
-				"line" : 405,
-				"parent" : 89
-			},
-			{
-				"command" : 29,
-				"file" : 0,
-				"line" : 2625,
-				"parent" : 90
+				"command" : 27,
+				"file" : 14,
+				"line" : 3747,
+				"parent" : 68
 			},
 			{
 				"command" : 27,
-				"file" : 0,
-				"line" : 2165,
-				"parent" : 91
+				"file" : 14,
+				"line" : 3554,
+				"parent" : 68
+			},
+			{
+				"command" : 27,
+				"file" : 14,
+				"line" : 3747,
+				"parent" : 68
 			},
 			{
 				"command" : 31,
 				"file" : 14,
-				"line" : 3857,
+				"line" : 3839,
 				"parent" : 68
 			},
 			{
@@ -630,7 +631,7 @@
 			{
 				"command" : 31,
 				"file" : 14,
-				"line" : 3893,
+				"line" : 3857,
 				"parent" : 68
 			},
 			{
@@ -652,7 +653,61 @@
 				"parent" : 99
 			},
 			{
+				"command" : 31,
+				"file" : 14,
+				"line" : 3893,
+				"parent" : 68
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 405,
+				"parent" : 101
+			},
+			{
+				"command" : 29,
+				"file" : 0,
+				"line" : 2625,
+				"parent" : 102
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 2165,
+				"parent" : 103
+			},
+			{
 				"command" : 34,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 31,
+				"file" : 0,
+				"line" : 485,
+				"parent" : 105
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 405,
+				"parent" : 106
+			},
+			{
+				"command" : 29,
+				"file" : 0,
+				"line" : 2625,
+				"parent" : 107
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 2165,
+				"parent" : 108
+			},
+			{
+				"command" : 35,
 				"file" : 0,
 				"line" : 873,
 				"parent" : 48
@@ -661,7 +716,7 @@
 				"command" : 27,
 				"file" : 0,
 				"line" : 2290,
-				"parent" : 101
+				"parent" : 110
 			}
 		]
 	},
@@ -837,7 +892,7 @@
 				14,
 				16,
 				18,
-				19,
+				20,
 				21,
 				23,
 				25,
@@ -846,9 +901,13 @@
 				31,
 				33,
 				35,
-				36,
 				37,
-				38
+				39,
+				41,
+				42,
+				43,
+				44,
+				45
 			]
 		}
 	],
@@ -998,8 +1057,7 @@
 				2,
 				3,
 				4,
-				18,
-				19,
+				20,
 				21,
 				23,
 				25,
@@ -1008,25 +1066,30 @@
 				31,
 				33,
 				35,
-				36,
 				37,
-				38,
 				39,
 				41,
 				42,
-				47,
+				43,
+				44,
+				45,
+				46,
+				48,
 				49,
-				69,
-				70,
-				71,
-				72,
-				73,
-				74,
-				75,
-				76,
-				77,
-				78,
-				79
+				54,
+				56,
+				58,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91
 			]
 		},
 		{
@@ -1040,15 +1103,18 @@
 				12,
 				14,
 				16,
-				17,
-				20,
+				18,
+				19,
 				22,
 				24,
 				26,
 				28,
 				30,
 				32,
-				34
+				34,
+				36,
+				38,
+				40
 			]
 		},
 		{
@@ -1060,34 +1126,27 @@
 				9,
 				11,
 				13,
-				15
+				15,
+				17
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				40,
-				43,
-				44,
-				45,
-				46,
-				48
+				47,
+				50,
+				51,
+				52,
+				53,
+				55,
+				57
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				50,
-				51,
-				52,
-				53,
-				54,
-				55,
-				56,
-				57,
-				58,
 				59,
 				60,
 				61,
@@ -1097,7 +1156,19 @@
 				65,
 				66,
 				67,
-				68
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80
 			]
 		}
 	],
@@ -1200,6 +1271,17 @@
 			"backtrace" : 67,
 			"compileGroupIndex" : 0,
 			"path" : "src/gestioncarte.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 67,
+			"path" : "src/authmanager.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 67,
+			"compileGroupIndex" : 0,
+			"path" : "src/authmanager.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1318,80 +1400,122 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 89,
+			"path" : "ui/MainLogin.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 90,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/MainLogin_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 91,
+			"path" : "ui/Login.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
 			"backtrace" : 92,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_appPompier_raw_qml_0.cpp",
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/Login_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 96,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_appPompier_raw_res_0.cpp",
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_appPompier_raw_qml_0.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 100,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_appPompier_raw_res_0.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 104,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_appPompier_raw_qml_0_extra_qmldirs.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 109,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_app_resources.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 111,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qmake_Pompier.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/Pompier/qmldir",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/appPompier_raw_qml_0.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/appPompier_raw_res_0.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"path" : "ui/icons/help.svg",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"path" : "ui/icons/menu.svg",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"path" : "ui/icons/check.svg",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"path" : "ui/icons/clock.svg",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/appPompier_raw_qml_0_extra_qmldirs.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 102,
+			"backtrace" : 111,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/Pompier/ui/qmldir",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 111,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/app_resources.qrc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 111,
+			"path" : "ui/icons/Felix_le_pompier_et_incendie.png",
 			"sourceGroupIndex" : 3
 		},
 		{
@@ -1481,6 +1605,18 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/MainLogin_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/Login_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_appPompier_raw_qml_0.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
@@ -1494,6 +1630,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_appPompier_raw_qml_0_extra_qmldirs.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.qt/rcc/qrc_app_resources.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{

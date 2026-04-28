@@ -2,6 +2,148 @@
     {
         "classes": [
             {
+                "className": "AuthManager",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "username",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "lineNumber": 25,
+                        "name": "login",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 13,
+                        "name": "username",
+                        "notify": "usernameChanged",
+                        "read": "username",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 14,
+                        "name": "token",
+                        "notify": "tokenChanged",
+                        "read": "token",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "lineNumber": 15,
+                        "name": "loading",
+                        "notify": "loadingChanged",
+                        "read": "loading",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "AuthManager",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 28,
+                        "name": "loginSuccess",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 29,
+                        "name": "loginFailed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 30,
+                        "name": "usernameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 31,
+                        "name": "tokenChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 32,
+                        "name": "loadingChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "reply",
+                                "type": "QNetworkReply*"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 35,
+                        "name": "onReplyFinished",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "authmanager.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
                 "className": "FicheUrgence",
                 "lineNumber": 12,
                 "object": true,
@@ -16,7 +158,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 54,
+                        "lineNumber": 58,
                         "name": "statutBDD",
                         "returnType": "void"
                     }
@@ -175,7 +317,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 5,
+                        "index": 8,
                         "lineNumber": 24,
                         "name": "getAdresse",
                         "returnType": "void"
@@ -188,7 +330,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 6,
+                        "index": 9,
                         "lineNumber": 25,
                         "name": "getType",
                         "returnType": "void"
@@ -201,7 +343,7 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 7,
+                        "index": 10,
                         "lineNumber": 26,
                         "name": "getGravite",
                         "returnType": "void"
@@ -214,7 +356,7 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 8,
+                        "index": 11,
                         "lineNumber": 27,
                         "name": "getNbVictime",
                         "returnType": "void"
@@ -227,7 +369,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 9,
+                        "index": 12,
                         "lineNumber": 29,
                         "name": "getCommentaire",
                         "returnType": "void"
@@ -244,21 +386,21 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 10,
+                        "index": 13,
                         "lineNumber": 30,
                         "name": "getHeure",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 11,
+                        "index": 14,
                         "lineNumber": 32,
                         "name": "recalculerDistance",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 12,
+                        "index": 15,
                         "lineNumber": 33,
                         "name": "preparerEnregistrementBDD",
                         "returnType": "void"
@@ -305,6 +447,45 @@
                         "lineNumber": 41,
                         "name": "afficherTempsTrajet",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "texte",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 42,
+                        "name": "afficherNbPompier",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "moyens",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 43,
+                        "name": "afficherMoyenDispo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "caserne2",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 44,
+                        "name": "afficher2Caserne",
+                        "returnType": "void"
                     }
                 ],
                 "slots": [
@@ -328,15 +509,15 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 3,
-                        "lineNumber": 44,
+                        "index": 6,
+                        "lineNumber": 47,
                         "name": "getLonLatGeocoding",
                         "returnType": "void"
                     },
                     {
                         "access": "private",
-                        "index": 4,
-                        "lineNumber": 45,
+                        "index": 7,
+                        "lineNumber": 48,
                         "name": "calculerDistanceMin",
                         "returnType": "void"
                     }

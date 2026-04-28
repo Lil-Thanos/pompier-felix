@@ -47,6 +47,12 @@ template <> constexpr inline auto SuperviseurOPE::qt_create_metaobjectdata<qt_me
         "message",
         "afficherTempsTrajet",
         "temps_affichage",
+        "afficherNbPompier",
+        "texte",
+        "afficherMoyenDispo",
+        "moyens",
+        "afficher2Caserne",
+        "caserne2",
         "getLonLatGeocoding",
         "lat",
         "lon",
@@ -83,40 +89,52 @@ template <> constexpr inline auto SuperviseurOPE::qt_create_metaobjectdata<qt_me
         QtMocHelpers::SignalData<void(QString)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 7 },
         }}),
+        // Signal 'afficherNbPompier'
+        QtMocHelpers::SignalData<void(QString)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 9 },
+        }}),
+        // Signal 'afficherMoyenDispo'
+        QtMocHelpers::SignalData<void(QStringList)>(10, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QStringList, 11 },
+        }}),
+        // Signal 'afficher2Caserne'
+        QtMocHelpers::SignalData<void(QString)>(12, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 13 },
+        }}),
         // Slot 'getLonLatGeocoding'
-        QtMocHelpers::SlotData<void(double, double, QString, QString)>(8, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::Double, 9 }, { QMetaType::Double, 10 }, { QMetaType::QString, 11 }, { QMetaType::QString, 12 },
+        QtMocHelpers::SlotData<void(double, double, QString, QString)>(14, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Double, 15 }, { QMetaType::Double, 16 }, { QMetaType::QString, 17 }, { QMetaType::QString, 18 },
         }}),
         // Slot 'calculerDistanceMin'
-        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
         // Method 'getAdresse'
-        QtMocHelpers::MethodData<void(QString)>(14, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 15 },
+        QtMocHelpers::MethodData<void(QString)>(20, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 21 },
         }}),
         // Method 'getType'
-        QtMocHelpers::MethodData<void(QString)>(16, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 17 },
-        }}),
-        // Method 'getGravite'
-        QtMocHelpers::MethodData<void(int)>(18, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 19 },
-        }}),
-        // Method 'getNbVictime'
-        QtMocHelpers::MethodData<void(int)>(20, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 21 },
-        }}),
-        // Method 'getCommentaire'
         QtMocHelpers::MethodData<void(QString)>(22, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 23 },
         }}),
+        // Method 'getGravite'
+        QtMocHelpers::MethodData<void(int)>(24, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 25 },
+        }}),
+        // Method 'getNbVictime'
+        QtMocHelpers::MethodData<void(int)>(26, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 27 },
+        }}),
+        // Method 'getCommentaire'
+        QtMocHelpers::MethodData<void(QString)>(28, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 29 },
+        }}),
         // Method 'getHeure'
-        QtMocHelpers::MethodData<void(QString, QString)>(24, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 25 }, { QMetaType::QString, 26 },
+        QtMocHelpers::MethodData<void(QString, QString)>(30, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 31 }, { QMetaType::QString, 32 },
         }}),
         // Method 'recalculerDistance'
-        QtMocHelpers::MethodData<void()>(27, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(33, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'preparerEnregistrementBDD'
-        QtMocHelpers::MethodData<void()>(28, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(34, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -143,16 +161,19 @@ void SuperviseurOPE::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 0: _t->distanceMinCalculee((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         case 1: _t->messageInfo((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: _t->afficherTempsTrajet((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 3: _t->getLonLatGeocoding((*reinterpret_cast<std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<double>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4]))); break;
-        case 4: _t->calculerDistanceMin(); break;
-        case 5: _t->getAdresse((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 6: _t->getType((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 7: _t->getGravite((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 8: _t->getNbVictime((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 9: _t->getCommentaire((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 10: _t->getHeure((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
-        case 11: _t->recalculerDistance(); break;
-        case 12: _t->preparerEnregistrementBDD(); break;
+        case 3: _t->afficherNbPompier((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 4: _t->afficherMoyenDispo((*reinterpret_cast<std::add_pointer_t<QStringList>>(_a[1]))); break;
+        case 5: _t->afficher2Caserne((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 6: _t->getLonLatGeocoding((*reinterpret_cast<std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<double>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4]))); break;
+        case 7: _t->calculerDistanceMin(); break;
+        case 8: _t->getAdresse((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 9: _t->getType((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 10: _t->getGravite((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 11: _t->getNbVictime((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 12: _t->getCommentaire((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 13: _t->getHeure((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
+        case 14: _t->recalculerDistance(); break;
+        case 15: _t->preparerEnregistrementBDD(); break;
         default: ;
         }
     }
@@ -162,6 +183,12 @@ void SuperviseurOPE::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         if (QtMocHelpers::indexOfMethod<void (SuperviseurOPE::*)(QString )>(_a, &SuperviseurOPE::messageInfo, 1))
             return;
         if (QtMocHelpers::indexOfMethod<void (SuperviseurOPE::*)(QString )>(_a, &SuperviseurOPE::afficherTempsTrajet, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (SuperviseurOPE::*)(QString )>(_a, &SuperviseurOPE::afficherNbPompier, 3))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (SuperviseurOPE::*)(QStringList )>(_a, &SuperviseurOPE::afficherMoyenDispo, 4))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (SuperviseurOPE::*)(QString )>(_a, &SuperviseurOPE::afficher2Caserne, 5))
             return;
     }
 }
@@ -185,14 +212,14 @@ int SuperviseurOPE::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 16)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 16;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 16)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 13;
+        _id -= 16;
     }
     return _id;
 }
@@ -213,5 +240,23 @@ void SuperviseurOPE::messageInfo(QString _t1)
 void SuperviseurOPE::afficherTempsTrajet(QString _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
+}
+
+// SIGNAL 3
+void SuperviseurOPE::afficherNbPompier(QString _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
+}
+
+// SIGNAL 4
+void SuperviseurOPE::afficherMoyenDispo(QStringList _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 4, nullptr, _t1);
+}
+
+// SIGNAL 5
+void SuperviseurOPE::afficher2Caserne(QString _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 5, nullptr, _t1);
 }
 QT_WARNING_POP

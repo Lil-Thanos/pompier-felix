@@ -128,6 +128,13 @@ void SuperviseurOPE::calculerDistanceMin()
     r_caserne_assigne = mindist;
 
     emit distanceMinCalculee(mindist);
+    emit afficherNbPompier("12 Pompiers disponibles");
+
+    QStringList moyens;
+    moyens << "VSAV x2" << "FPT x1" << "EPA x1";
+    emit afficherMoyenDispo(moyens);
+
+    getCaserne2();
 
     calculerTrajet();
     preparerEnregistrementBDD();
@@ -180,3 +187,10 @@ QByteArray SuperviseurOPE::constructionJson()
 
     return payload;
 }
+
+void SuperviseurOPE::getCaserne2() {
+    QString caserneA2 = ficheUrgence->getDeuxiemeCaserne();
+
+    emit afficher2Caserne(caserneA2);
+}
+

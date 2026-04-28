@@ -1,16 +1,19 @@
+# App.qml
+
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 import QtQuick.Effects
 
 
-ApplicationWindow {
+Item {
     id: appWindow
     width: 1920
     height: 1080
     visible: true
-    title: "Gestion d'Intervention"
-    color: "#f3f4f6"
+    property var moyensModel: []
+    // # title: "Gestion d'Intervention"
+    // # color: "#f3f4f6"
 
     property string activeTab: "nouvelle"
 
@@ -86,7 +89,7 @@ ApplicationWindow {
                             RowLayout {
                                 spacing: 8
                                 Image {
-                                    source: "icons/clock.svg"
+                                    source: "qrc:/ui/icons/clock.svg"
                                     width: 20
                                     height: 20
                                     visible: false
@@ -100,7 +103,8 @@ ApplicationWindow {
                             }
 
                             Text {
-                                text: "12 Pompiers disponibles"
+                                id: nbPompierDispo
+                                text: ""
                                 font.pixelSize: 14
                                 color: "#059669"
                                 font.bold: true
@@ -122,6 +126,19 @@ ApplicationWindow {
                         function onAfficherTempsTrajet(temps) {
                             tempsTrajet.text = temps
                         }
+
+                        function onAfficherNbPompier(texte) {
+                            nbPompierDispo.text = texte
+                        }
+
+                        function onAfficherMoyenDispo(moyens) {
+                            moyensModel = moyens
+                        }
+
+                        function onAfficher2Caserne(caserne2) {
+                            deuxiemeCaserneAffecte.text = caserne2
+                        }
+
                     }
 
                     InfoCard {
@@ -137,7 +154,8 @@ ApplicationWindow {
                             spacing: 8
 
                             Repeater {
-                                model: ["VSAV x2", "FPT x1", "EPA x1"]
+                                model: moyensModel
+
                                 delegate: Rectangle {
                                     width: parent.width
                                     height: 36
@@ -167,6 +185,14 @@ ApplicationWindow {
                             spacing: 12
 
                             Text {
+                                id: deuxiemeCaserneAffecte
+                                text: ""
+                                font.pixelSize: 17
+                                font.bold: true
+                                color: "#1f2937"
+                            }
+
+                            Text {
                                 text: "Aucun renfort requis"
                                 font.pixelSize: 14
                                 color: "#6b7280"
@@ -174,7 +200,7 @@ ApplicationWindow {
                             }
 
                             Button {
-                                text: "Demander Renfort"
+                                text: "Envoyer renfort"
                                 Layout.fillWidth: false
 
                                 background: Rectangle {
@@ -192,6 +218,7 @@ ApplicationWindow {
                             }
                         }
                     }
+
                 }
             }
 
@@ -281,7 +308,7 @@ ApplicationWindow {
                     }
                 }
 
-                // Icône X
+                // // Icône X
                 Canvas {
                     id: errorIcon
                     anchors.centerIn: parent
@@ -307,6 +334,16 @@ ApplicationWindow {
                         ctx.lineTo(8, 24)
                         ctx.stroke()
                     }
+
+                Image {
+                    Layout.alignment: Qt.AlignHCenter
+                    Layout.preferredWidth: 80
+                    Layout.preferredHeight: 80
+
+                    source: "qrc:/ui/icons/Felix_le_pompier_et_incendie.png"
+                    fillMode: Image.PreserveAspectFit
+                }
+
 
                     NumberAnimation on rotation {
                         running: errorDialog.visible
@@ -344,7 +381,7 @@ ApplicationWindow {
                     text: "Veuillez remplir tous les champs obligatoires marqués d'un astérisque (*)"
                     wrapMode: Text.Wrap
                     font.pixelSize: 14
-                    color: "#991b1b"
+                    color: "#dc2626"
                     horizontalAlignment: Text.AlignHCenter
                     lineHeight: 1.4
                 }
@@ -369,7 +406,7 @@ ApplicationWindow {
 
                 background: Rectangle {
                     radius: 8
-                    color: okButton.down ? "#b91c1c" : (okButton.hovered ? "#dc2626" : "#ef4444")
+                    color: okButton.down ? "#C92222" : (okButton.hovered ? "#dc2626" : "#ef4444")
 
                     Behavior on color {
                         ColorAnimation { duration: 150 }

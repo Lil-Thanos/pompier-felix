@@ -34,7 +34,7 @@ Item {
             // ── Header ───────────────────────────────────────────────────
             Rectangle {
                 height: 64
-                color:  "#dc2626"
+                color:  "#f3f4f6"
                 Layout.fillWidth: true
                 radius: 16
                 Rectangle {
@@ -47,9 +47,9 @@ Item {
                     anchors.leftMargin: 24
                     anchors.rightMargin: 24
                     Text {
-                        text: "👥 Gestion des Renforts"
+                        text: "👥 Carte des interventions"
                         font.pixelSize: 20; font.bold: true
-                        color: "white"
+                        color: "#374151"
                     }
                     Item { Layout.fillWidth: true }
                     // Compteurs interventions

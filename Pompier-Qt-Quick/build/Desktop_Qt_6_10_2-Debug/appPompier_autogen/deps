@@ -8,6 +8,8 @@ appPompier_autogen/timestamp: \
 	/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/appPompier_autogen/moc_predefs.h \
 	/home/felix/Documents/projet/Pompier-Qt-Quick/main.cpp \
+	/home/felix/Documents/projet/Pompier-Qt-Quick/src/authmanager.cpp \
+	/home/felix/Documents/projet/Pompier-Qt-Quick/src/authmanager.h \
 	/home/felix/Documents/projet/Pompier-Qt-Quick/src/ficheurgence.cpp \
 	/home/felix/Documents/projet/Pompier-Qt-Quick/src/ficheurgence.h \
 	/home/felix/Documents/projet/Pompier-Qt-Quick/src/geocoding.cpp \

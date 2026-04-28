@@ -12,7 +12,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 5,
+                    "index": 8,
                     "lineNumber": 24,
                     "name": "getAdresse",
                     "returnType": "void"
@@ -25,7 +25,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 6,
+                    "index": 9,
                     "lineNumber": 25,
                     "name": "getType",
                     "returnType": "void"
@@ -38,7 +38,7 @@
                             "type": "int"
                         }
                     ],
-                    "index": 7,
+                    "index": 10,
                     "lineNumber": 26,
                     "name": "getGravite",
                     "returnType": "void"
@@ -51,7 +51,7 @@
                             "type": "int"
                         }
                     ],
-                    "index": 8,
+                    "index": 11,
                     "lineNumber": 27,
                     "name": "getNbVictime",
                     "returnType": "void"
@@ -64,7 +64,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 9,
+                    "index": 12,
                     "lineNumber": 29,
                     "name": "getCommentaire",
                     "returnType": "void"
@@ -81,21 +81,21 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 10,
+                    "index": 13,
                     "lineNumber": 30,
                     "name": "getHeure",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 11,
+                    "index": 14,
                     "lineNumber": 32,
                     "name": "recalculerDistance",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 12,
+                    "index": 15,
                     "lineNumber": 33,
                     "name": "preparerEnregistrementBDD",
                     "returnType": "void"
@@ -142,6 +142,45 @@
                     "lineNumber": 41,
                     "name": "afficherTempsTrajet",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "texte",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 42,
+                    "name": "afficherNbPompier",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "moyens",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 43,
+                    "name": "afficherMoyenDispo",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "caserne2",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 44,
+                    "name": "afficher2Caserne",
+                    "returnType": "void"
                 }
             ],
             "slots": [
@@ -165,15 +204,15 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 3,
-                    "lineNumber": 44,
+                    "index": 6,
+                    "lineNumber": 47,
                     "name": "getLonLatGeocoding",
                     "returnType": "void"
                 },
                 {
                     "access": "private",
-                    "index": 4,
-                    "lineNumber": 45,
+                    "index": 7,
+                    "lineNumber": 48,
                     "name": "calculerDistanceMin",
                     "returnType": "void"
                 }

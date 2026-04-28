@@ -24,14 +24,17 @@ private:
     const QString    _BDD_PATH = "/home/felix/Documents/projet/CasernesBZH.db";
 
     const double     _R =  6371.0;
-    const int        _VITESSE_MOYENNE = 86; // La vitesse moyenne sur l'ensemble du parcours est 86 km/h.
     const double     _KMH_TO_MIN = 60.0;
 
+    const int        _VITESSE_MOYENNE = 86; // La vitesse moyenne sur l'ensemble du parcours est 86 km/h.
+    const int        _TEMPS_DE_PREPARATION = 7; // temps de preparation moyen des pompier avant d'embarquer
 
 
     double           m_distance;
     QString          m_ip;
     int              m_port;
+
+    QString         m_deuxiemeCaserne;
 
 public:
     FicheUrgence();
@@ -46,6 +49,7 @@ public:
     int        get_serverId(QString caserne_assigner);
 
     QString    calculerListCasernes(QList<QMap<QString, QVariant>> casernes, double latSinistre, double lonSinistre);
+    QString    getDeuxiemeCaserne();
 
     double     calculerHaversine(double longitude_s, double lattitude_s, double longitude_t, double lattitude_t);
     double     calculerTempsTrajet();

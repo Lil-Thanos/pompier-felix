@@ -83,6 +83,8 @@ CMakeFiles/appPompier_qmlimportscan: .qt/qml_imports/appPompier_build.cmake
 .qt/qml_imports/appPompier_build.cmake: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/InfoCard.qml
 .qt/qml_imports/appPompier_build.cmake: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/StatusBadge.qml
 .qt/qml_imports/appPompier_build.cmake: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/MarkerItem.qml
+.qt/qml_imports/appPompier_build.cmake: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/MainLogin.qml
+.qt/qml_imports/appPompier_build.cmake: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/Login.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running qmlimportscanner for appPompier"
 	cd /home/felix/Documents/projet/Pompier-Qt-Quick && /home/felix/Qt/6.10.2/gcc_64/libexec/qmlimportscanner @/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.qt/qml_imports/appPompier_build.rsp
 

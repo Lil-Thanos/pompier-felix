@@ -39,6 +39,9 @@ signals:
     void        distanceMinCalculee(QString distance);
     void        messageInfo(QString message);
     void        afficherTempsTrajet(QString temps_affichage);
+    void        afficherNbPompier(QString texte);
+    void        afficherMoyenDispo(QStringList moyens);
+    void        afficher2Caserne(QString caserne2);
 
 private slots:
     void        getLonLatGeocoding(double lat, double lon, QString code_postal, QString adresse_complete);
@@ -71,6 +74,7 @@ private:
 
     void        creerFicheUrgence(double latitude, double longitude);
     void        calculerTrajet();
+    void        getCaserne2();
 
 };
 

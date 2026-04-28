@@ -9,6 +9,8 @@
     <file alias="ui/InfoCard.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/InfoCard.qml</file>
     <file alias="ui/StatusBadge.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/StatusBadge.qml</file>
     <file alias="ui/MarkerItem.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/MarkerItem.qml</file>
+    <file alias="ui/MainLogin.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/MainLogin.qml</file>
+    <file alias="ui/Login.qml">/home/felix/Documents/projet/Pompier-Qt-Quick/ui/Login.qml</file>
   </qresource>
 </RCC>
 

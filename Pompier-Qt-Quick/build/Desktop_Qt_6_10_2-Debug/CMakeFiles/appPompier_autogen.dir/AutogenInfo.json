@@ -1427,6 +1427,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/felix/Documents/projet/Pompier-Qt-Quick/src/authmanager.h",
+			"MU",
+			"UVLADIE3JM/moc_authmanager.cpp",
+			null
+		],
+		[
 			"/home/felix/Documents/projet/Pompier-Qt-Quick/src/ficheurgence.h",
 			"MU",
 			"UVLADIE3JM/moc_ficheurgence.cpp",
@@ -1550,6 +1556,8 @@
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/InfoCard_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/InterventionForm_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/InterventionsList_qml.cpp",
+		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/Login_qml.cpp",
+		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/MainLogin_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/MarkerItem_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/StatusBadge_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/Tabs_qml.cpp",
@@ -1566,6 +1574,11 @@
 	"SOURCES" : 
 	[
 		[ "/home/felix/Documents/projet/Pompier-Qt-Quick/main.cpp", "MU", null ],
+		[
+			"/home/felix/Documents/projet/Pompier-Qt-Quick/src/authmanager.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/felix/Documents/projet/Pompier-Qt-Quick/src/ficheurgence.cpp",
 			"MU",
@@ -1613,6 +1626,8 @@
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/InfoCard_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/InterventionForm_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/InterventionsList_qml.cpp",
+		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/Login_qml.cpp",
+		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/MainLogin_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/MarkerItem_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/StatusBadge_qml.cpp",
 		"/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/Tabs_qml.cpp",

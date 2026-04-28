@@ -78,6 +78,8 @@ CMakeFiles/appPompier_copy_qml: .qt/appPompier_qml.txt
 .qt/appPompier_qml.txt: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/InfoCard.qml
 .qt/appPompier_qml.txt: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/StatusBadge.qml
 .qt/appPompier_qml.txt: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/MarkerItem.qml
+.qt/appPompier_qml.txt: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/MainLogin.qml
+.qt/appPompier_qml.txt: /home/felix/Documents/projet/Pompier-Qt-Quick/ui/Login.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying appPompier qml sources into build dir"
 	/home/felix/Qt/Tools/CMake/bin/cmake -DFILES_INFO_PATH=/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.qt/appPompier_qml.cmake -P /home/felix/Qt/6.10.2/gcc_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
 

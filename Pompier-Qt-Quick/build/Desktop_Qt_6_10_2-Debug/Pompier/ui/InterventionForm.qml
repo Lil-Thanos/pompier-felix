@@ -61,7 +61,7 @@ Rectangle {
         // Form Header
         Rectangle {
             height: 64
-            color: "#dc2626"
+            color: "#f3f4f6"
             Layout.fillWidth: true
             radius: 16
 
@@ -78,10 +78,10 @@ Rectangle {
                 anchors.rightMargin: 24
 
                 Text {
-                    text: "📋 Création d'Intervention"
+                    text: "☎️ Création d'Intervention"
                     font.pixelSize: 20
                     font.bold: true
-                    color: "white"
+                    color: "#374151"
                 }
 
                 Item { Layout.fillWidth: true }
@@ -89,7 +89,7 @@ Rectangle {
                 Text {
                     text: Qt.formatDateTime(new Date(), "dd/MM/yyyy")
                     font.pixelSize: 14
-                    color: "#fecaca"
+                    color: "#374151"
                 }
             }
         }

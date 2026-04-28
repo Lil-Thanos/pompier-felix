@@ -17,3 +17,5 @@
 /qt/qml/Pompier/ui/InfoCard.qml
 /qt/qml/Pompier/ui/StatusBadge.qml
 /qt/qml/Pompier/ui/MarkerItem.qml
+/qt/qml/Pompier/ui/MainLogin.qml
+/qt/qml/Pompier/ui/Login.qml

@@ -19,7 +19,7 @@ Rectangle {
             model: [
                 { label: "Nouvelle Intervention", value: "nouvelle", icon: "➕" },
                 { label: "Alerte & Moyens", value: "alerte", icon: "🚨" },
-                { label: "Gestion des Renforts", value: "gestion", icon: "👥" }
+                { label: "Carte des Interventions", value: "gestion", icon: "👥" }
             ]
 
             delegate: Button {

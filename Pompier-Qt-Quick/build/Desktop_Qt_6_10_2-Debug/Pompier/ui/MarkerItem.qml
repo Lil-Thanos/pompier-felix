@@ -1,5 +1,3 @@
-// MarkerItem.qml — identique à la version corrigée précédente
-// (Component inline, pas de createComponent asynchrone)
 import QtQuick 2.15
 import QtLocation 5.15
 import QtQuick.Controls 2.15
@@ -34,7 +32,7 @@ MapQuickItem {
                 // En-tête vert comme le header de la page
                 Rectangle {
                     width: parent.width; height: 36
-                    color: "#10b981"; radius: 10
+                    color: "#f3f4f6"; radius: 10
                     Rectangle {
                         anchors.bottom: parent.bottom
                         anchors.left: parent.left
@@ -45,7 +43,7 @@ MapQuickItem {
                     Text {
                         anchors.centerIn: parent
                         text: popup.iList.length + " intervention(s)"
-                        font.bold: true; font.pixelSize: 13; color: "white"
+                        font.bold: true; font.pixelSize: 13; color: "#6b7280"
                     }
                 }
 

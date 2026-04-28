@@ -9,8 +9,8 @@
 
 #include "src/superviseurope.h"
 #include "src/interventionmodel.h"
-
 #include "src/gestioncarte.h"
+#include "src/authmanager.h"
 
 int main(int argc, char *argv[])
 {
@@ -43,6 +43,10 @@ int main(int argc, char *argv[])
     InterventionsManager manager;
     engine.rootContext()->setContextProperty("interventionsManager", &manager);
 
+    // --- authentification ---
+    AuthManager authManager;
+    engine.rootContext()->setContextProperty("authManager", &authManager);
+
     //--- Gestion carte ---
     // PointModel pointModel;
     // pointModel.loadFromDatabase();
@@ -64,7 +68,7 @@ int main(int argc, char *argv[])
         );
 
     // --- Load QML ---
-    engine.loadFromModule("Pompier", "App");
+    engine.loadFromModule("Pompier", "MainLogin");
 
     return app.exec();
 }

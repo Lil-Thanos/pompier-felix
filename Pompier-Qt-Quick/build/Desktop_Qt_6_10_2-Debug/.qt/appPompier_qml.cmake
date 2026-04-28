@@ -20,6 +20,10 @@ set(src_and_dest_list
     "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/Pompier/ui/StatusBadge.qml"
     "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/MarkerItem.qml"
     "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/Pompier/ui/MarkerItem.qml"
+    "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/MainLogin.qml"
+    "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/Pompier/ui/MainLogin.qml"
+    "/home/felix/Documents/projet/Pompier-Qt-Quick/ui/Login.qml"
+    "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/Pompier/ui/Login.qml"
 
 )
 set(timestamp_file "/home/felix/Documents/projet/Pompier-Qt-Quick/build/Desktop_Qt_6_10_2-Debug/.qt/appPompier_qml.txt")

@@ -82,7 +82,8 @@
 				14,
 				15,
 				16,
-				17
+				17,
+				18
 			]
 		}
 	],
@@ -146,6 +147,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/InterventionsList_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2-Debug/.rcc/qmlcache/appPompier_ui/MainLogin_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{

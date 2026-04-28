@@ -29,7 +29,7 @@ Rectangle {
             width: 48
             height: 48
             radius: 24
-            color: "#ffffff"
+            color: "#f9fafb"
             visible: false
 
             Text {
@@ -63,6 +63,50 @@ Rectangle {
         StatusBadge {
             id: badgeStatut
             Layout.alignment: Qt.AlignVCenter
+        }
+
+        // --- Compte connecté ---
+        Rectangle {
+            Layout.alignment: Qt.AlignVCenter
+            height: 36
+            width: userRow.implicitWidth + 24
+            radius: 6
+            color: "#7f1d1d"
+
+            RowLayout {
+                id: userRow
+                anchors.centerIn: parent
+                spacing: 8
+
+                // Icône utilisateur dessinée en Canvas
+                Canvas {
+                    width: 18
+                    height: 18
+                    onPaint: {
+                        var ctx = getContext("2d")
+                        ctx.clearRect(0, 0, width, height)
+                        ctx.fillStyle = "#fecaca"
+
+                        // Tête
+                        ctx.beginPath()
+                        ctx.arc(9, 6, 4, 0, Math.PI * 2)
+                        ctx.fill()
+
+                        // Corps
+                        ctx.beginPath()
+                        ctx.arc(9, 18, 6, Math.PI, Math.PI * 2)
+                        ctx.fill()
+                    }
+                }
+
+                Text {
+                    // authManager.username = la Q_PROPERTY C++ mise à jour après login
+                    text: authManager.username
+                    color: "white"
+                    font.pixelSize: 13
+                    font.bold: true
+                }
+            }
         }
 
         // Time Display

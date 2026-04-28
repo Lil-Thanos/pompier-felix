@@ -10,5 +10,7 @@ GestionCarte 1.0 ui/GestionCarte.qml
 InfoCard 1.0 ui/InfoCard.qml
 StatusBadge 1.0 ui/StatusBadge.qml
 MarkerItem 1.0 ui/MarkerItem.qml
+MainLogin 1.0 ui/MainLogin.qml
+Login 1.0 ui/Login.qml
 depends QtQuick
 

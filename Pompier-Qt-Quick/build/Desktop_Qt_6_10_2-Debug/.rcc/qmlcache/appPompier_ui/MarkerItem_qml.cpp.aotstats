@@ -10,7 +10,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "interventions",
-                            "line": 14,
+                            "line": 12,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "closePolicy",
-                            "line": 23,
+                            "line": 21,
                             "message": "Could not find property \"closePolicy\"."
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "iList",
-                            "line": 24,
+                            "line": 22,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 32,
+                            "line": 30,
                             "message": "Cannot access value for name popup"
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 36,
+                            "line": 34,
                             "message": ""
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 43,
+                            "line": 41,
                             "message": "Cannot load property color from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/MarkerItem.qml)::parent with type QQuickItem."
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 39,
+                            "line": 37,
                             "message": ""
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 40,
+                            "line": 38,
                             "message": ""
                         },
                         {
@@ -74,7 +74,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 41,
+                            "line": 39,
                             "message": ""
                         },
                         {
@@ -82,7 +82,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 47,
+                            "line": 45,
                             "message": "Cannot access value for name popup"
                         },
                         {
@@ -90,7 +90,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 46,
+                            "line": 44,
                             "message": ""
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 53,
+                            "line": 51,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -106,7 +106,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 54,
+                            "line": 52,
                             "message": "Could not find property \"height\"."
                         },
                         {
@@ -114,7 +114,7 @@
                             "column": 50,
                             "durationMicroseconds": 0,
                             "functionName": "policy",
-                            "line": 56,
+                            "line": 54,
                             "message": "Could not find property \"policy\"."
                         },
                         {
@@ -122,7 +122,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 58,
+                            "line": 56,
                             "message": "Cannot access value for name popup"
                         },
                         {
@@ -130,6 +130,14 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "model",
+                            "line": 58,
+                            "message": "Cannot access value for name popup"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 40,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
                             "line": 60,
                             "message": "Cannot access value for name popup"
                         },
@@ -137,16 +145,8 @@
                             "codegenResult": 2,
                             "column": 40,
                             "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 62,
-                            "message": "Cannot access value for name popup"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 40,
-                            "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 63,
+                            "line": 61,
                             "message": "Cannot access value for name index"
                         },
                         {
@@ -154,7 +154,7 @@
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 67,
+                            "line": 65,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -162,7 +162,7 @@
                             "column": 53,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 65,
+                            "line": 63,
                             "message": ""
                         },
                         {
@@ -170,7 +170,7 @@
                             "column": 71,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 65,
+                            "line": 63,
                             "message": ""
                         },
                         {
@@ -178,7 +178,7 @@
                             "column": 91,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 65,
+                            "line": 63,
                             "message": ""
                         },
                         {
@@ -186,7 +186,7 @@
                             "column": 53,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 71,
+                            "line": 69,
                             "message": ""
                         },
                         {
@@ -194,6 +194,22 @@
                             "column": 98,
                             "durationMicroseconds": 0,
                             "functionName": "verticalCenter",
+                            "line": 69,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 50,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 71,
+                            "message": "Cannot access value for name modelData"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 138,
+                            "durationMicroseconds": 0,
+                            "functionName": "elide",
                             "line": 71,
                             "message": ""
                         },
@@ -202,23 +218,7 @@
                             "column": 50,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 73,
-                            "message": "Cannot access value for name modelData"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 138,
-                            "durationMicroseconds": 0,
-                            "functionName": "elide",
-                            "line": 73,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 50,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 74,
+                            "line": 72,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -226,7 +226,7 @@
                             "column": 50,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 75,
+                            "line": 73,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -234,7 +234,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 84,
+                            "line": 82,
                             "message": "Cannot access value for name popup"
                         },
                         {
@@ -242,7 +242,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 85,
+                            "line": 83,
                             "message": "Cannot access value for name closeHover"
                         },
                         {
@@ -250,7 +250,7 @@
                             "column": 65,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 87,
+                            "line": 85,
                             "message": ""
                         },
                         {
@@ -258,7 +258,7 @@
                             "column": 98,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 87,
+                            "line": 85,
                             "message": "Cannot load property color from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/MarkerItem.qml)::parent with type QQuickItem."
                         },
                         {
@@ -266,7 +266,7 @@
                             "column": 46,
                             "durationMicroseconds": 0,
                             "functionName": "top",
-                            "line": 87,
+                            "line": 85,
                             "message": ""
                         },
                         {
@@ -274,7 +274,7 @@
                             "column": 46,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 88,
+                            "line": 86,
                             "message": ""
                         },
                         {
@@ -282,7 +282,7 @@
                             "column": 102,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 89,
+                            "line": 87,
                             "message": "Cannot access value for name popup"
                         },
                         {
@@ -290,7 +290,7 @@
                             "column": 63,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 89,
+                            "line": 87,
                             "message": ""
                         },
                         {
@@ -298,7 +298,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 100,
+                            "line": 98,
                             "message": ""
                         },
                         {
@@ -306,7 +306,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 98,
+                            "line": 96,
                             "message": ""
                         },
                         {
@@ -314,7 +314,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 108,
+                            "line": 106,
                             "message": ""
                         },
                         {
@@ -322,7 +322,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 106,
+                            "line": 104,
                             "message": ""
                         },
                         {
@@ -330,7 +330,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 109,
+                            "line": 107,
                             "message": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method darker, returning QVariant -> QColor stored as QVariant"
                         },
                         {
@@ -338,7 +338,7 @@
                             "column": 49,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 112,
+                            "line": 110,
                             "message": ""
                         },
                         {
@@ -346,7 +346,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 112,
+                            "line": 110,
                             "message": ""
                         },
                         {
@@ -354,7 +354,7 @@
                             "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "pixelSize",
-                            "line": 114,
+                            "line": 112,
                             "message": ""
                         },
                         {
@@ -362,7 +362,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onEntered",
-                            "line": 119,
+                            "line": 117,
                             "message": ""
                         },
                         {
@@ -370,7 +370,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onExited",
-                            "line": 120,
+                            "line": 118,
                             "message": ""
                         },
                         {
@@ -378,7 +378,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 121,
+                            "line": 119,
                             "message": "Cannot load property length from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/MarkerItem.qml)::interventions with type QVariant."
                         },
                         {
@@ -386,7 +386,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 118,
+                            "line": 116,
                             "message": ""
                         }
                     ],

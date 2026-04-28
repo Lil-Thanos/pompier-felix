@@ -60,6 +60,9 @@ qt_add_qml_module(appPompier
         src/gestioncarte.h
         src/gestioncarte.cpp
         QML_FILES  ui/MarkerItem.qml
+        SOURCES src/authmanager.h src/authmanager.cpp
+        QML_FILES ui/MainLogin.qml
+        QML_FILES ui/Login.qml
 
 
 )

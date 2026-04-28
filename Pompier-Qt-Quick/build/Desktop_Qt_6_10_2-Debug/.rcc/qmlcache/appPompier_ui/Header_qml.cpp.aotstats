@@ -31,18 +31,18 @@
                         },
                         {
                             "codegenResult": 0,
-                            "column": 31,
+                            "column": 20,
                             "durationMicroseconds": 0,
-                            "functionName": "alignment",
+                            "functionName": "width",
                             "line": 72,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 23,
+                            "column": 31,
                             "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 79,
+                            "functionName": "alignment",
+                            "line": 70,
                             "message": ""
                         },
                         {
@@ -54,35 +54,59 @@
                             "message": ""
                         },
                         {
-                            "codegenResult": 0,
-                            "column": 34,
+                            "codegenResult": 2,
+                            "column": 30,
                             "durationMicroseconds": 0,
-                            "functionName": "onTriggered",
-                            "line": 88,
-                            "message": ""
+                            "functionName": "onPaint",
+                            "line": 85,
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 27,
                             "durationMicroseconds": 0,
-                            "functionName": "color",
+                            "functionName": "text",
                             "line": 104,
-                            "message": "Cannot load property hovered from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/Header.qml)::parent with type QQuickItem."
+                            "message": "Cannot access value for name authManager"
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
                             "durationMicroseconds": 0,
-                            "functionName": "fillMode",
+                            "functionName": "alignment",
                             "line": 116,
                             "message": ""
                         },
                         {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 123,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 122,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 0,
+                            "functionName": "onTriggered",
+                            "line": 132,
+                            "message": ""
+                        },
+                        {
                             "codegenResult": 2,
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 127,
+                            "line": 148,
                             "message": "Cannot load property hovered from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/Header.qml)::parent with type QQuickItem."
                         },
                         {
@@ -90,7 +114,23 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fillMode",
-                            "line": 139,
+                            "line": 160,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 171,
+                            "message": "Cannot load property hovered from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/Header.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "fillMode",
+                            "line": 183,
                             "message": ""
                         }
                     ],

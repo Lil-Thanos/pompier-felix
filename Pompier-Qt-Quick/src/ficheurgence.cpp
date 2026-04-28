@@ -109,34 +109,71 @@ QString FicheUrgence::calculerListCasernes(QList<QMap<QString, QVariant>> casern
         return "Aucune caserne trouvée";
     }
 
+    // double distanceMin = std::numeric_limits<double>::max();
+    // QString casernePlusProche = "Aucune";
+
+    // for (const auto &caserne : casernes)
+    // {
+    //     double lat = caserne["lat"].toDouble();
+    //     double lon = caserne["lon"].toDouble();
+
+    //     if (lat == 0 || lon == 0) {
+    //         //qDebug() << "Coordonnées invalides pour:" << caserne["name"].toString();
+    //         continue;
+    //     }
+
+    //     double distance = calculerHaversine(lonSinistre, latSinistre, lon, lat);
+    //     //qDebug() << "Caserne:" << caserne["name"].toString() << "Distance:" << distance << "km";
+
+    //     if (distance < distanceMin)
+    //     {
+    //         distanceMin = distance;
+    //         casernePlusProche = caserne["name"].toString();
+    //     }
+    // }
+
     double distanceMin = std::numeric_limits<double>::max();
+    double distanceMin2 = std::numeric_limits<double>::max();
+
     QString casernePlusProche = "Aucune";
+    QString caserneDeuxieme = "Aucune";
 
     for (const auto &caserne : casernes)
     {
         double lat = caserne["lat"].toDouble();
         double lon = caserne["lon"].toDouble();
 
-        if (lat == 0 || lon == 0) {
-            //qDebug() << "Coordonnées invalides pour:" << caserne["name"].toString();
-            continue;
-        }
+        if (lat == 0 || lon == 0) continue;
 
         double distance = calculerHaversine(lonSinistre, latSinistre, lon, lat);
-        //qDebug() << "Caserne:" << caserne["name"].toString() << "Distance:" << distance << "km";
 
         if (distance < distanceMin)
         {
+            distanceMin2 = distanceMin;
+            caserneDeuxieme = casernePlusProche;
+
             distanceMin = distance;
             casernePlusProche = caserne["name"].toString();
+        }
+        else if (distance < distanceMin2)
+        {
+            distanceMin2 = distance;
+            caserneDeuxieme = caserne["name"].toString();
         }
     }
 
     qDebug() << "Caserne la plus proche :" << casernePlusProche << "Distance :" << distanceMin << "km";
 
     m_distance = distanceMin;
+    m_deuxiemeCaserne = caserneDeuxieme + " (" + QString::number(distanceMin2, 'f', 2) + " km)";
 
     return casernePlusProche + "\n(" + QString::number(distanceMin, ' ', 2) + " km)";
+}
+
+QString FicheUrgence::getDeuxiemeCaserne() {
+
+    qDebug() << "Deuxieme caserne la plus proche" << m_deuxiemeCaserne;
+    return m_deuxiemeCaserne;
 }
 
 void FicheUrgence::enregistrerIntervention(QString _adresse,QString _casernes_assigne, QString _type, QString _gravite, QString _date, QString _heure, int _victimes, QString _commentaire, QString _statut)
@@ -167,7 +204,7 @@ void FicheUrgence::enregistrerIntervention(QString _adresse,QString _casernes_as
 
 double FicheUrgence::calculerTempsTrajet()
 {
-    double temps_minutes = (m_distance / _VITESSE_MOYENNE) * _KMH_TO_MIN;
+    double temps_minutes = ((m_distance / _VITESSE_MOYENNE) * _KMH_TO_MIN ) + _TEMPS_DE_PREPARATION;
 
     qDebug() << "Calcule temps trajet : " << _VITESSE_MOYENNE << "km/h, Distance :" << m_distance << "km temps total : " << temps_minutes;
 

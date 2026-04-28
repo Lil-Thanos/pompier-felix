@@ -6,43 +6,43 @@
                 {
                     "entries": [
                         {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "moyensModel",
+                            "line": 14,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 18,
+                            "line": 21,
                             "message": ""
                         },
                         {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "activeTab",
-                            "line": 32,
-                            "message": "Cannot retrieve a non-object type by ID: appWindow"
+                            "line": 35,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "onTabChanged",
-                            "line": 33,
-                            "message": "Cannot retrieve a non-object type by ID: appWindow"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
-                            "durationMicroseconds": 0,
-                            "functionName": "currentIndex",
-                            "line": 41,
-                            "message": "Cannot retrieve a non-object type by ID: appWindow"
+                            "line": 36,
+                            "message": "Cannot access value for name tab"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 44,
+                            "column": 27,
                             "durationMicroseconds": 0,
-                            "functionName": "preferredWidth",
-                            "line": 58,
+                            "functionName": "currentIndex",
+                            "line": 44,
                             "message": ""
                         },
                         {
@@ -50,7 +50,15 @@
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "preferredWidth",
-                            "line": 65,
+                            "line": 61,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 44,
+                            "durationMicroseconds": 0,
+                            "functionName": "preferredWidth",
+                            "line": 68,
                             "message": ""
                         },
                         {
@@ -58,7 +66,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 74,
+                            "line": 77,
                             "message": ""
                         },
                         {
@@ -66,7 +74,7 @@
                             "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "target",
-                            "line": 112,
+                            "line": 116,
                             "message": "Cannot access value for name superviseur"
                         },
                         {
@@ -74,14 +82,6 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "onDistanceMinCalculee",
-                            "line": 114,
-                            "message": "Functions without type annotations won't be compiled"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "onMessageInfo",
                             "line": 118,
                             "message": "Functions without type annotations won't be compiled"
                         },
@@ -89,8 +89,40 @@
                             "codegenResult": 2,
                             "column": 25,
                             "durationMicroseconds": 0,
-                            "functionName": "onAfficherTempsTrajet",
+                            "functionName": "onMessageInfo",
                             "line": 122,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "onAfficherTempsTrajet",
+                            "line": 126,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "onAfficherNbPompier",
+                            "line": 130,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "onAfficherMoyenDispo",
+                            "line": 134,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "onAfficher2Caserne",
+                            "line": 138,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -98,7 +130,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 134,
+                            "line": 151,
                             "message": ""
                         },
                         {
@@ -106,15 +138,15 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 140,
-                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                            "line": 157,
+                            "message": "Cannot access value for name moyensModel"
                         },
                         {
                             "codegenResult": 0,
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 142,
+                            "line": 160,
                             "message": ""
                         },
                         {
@@ -122,7 +154,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 149,
+                            "line": 167,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -130,7 +162,7 @@
                             "column": 59,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 148,
+                            "line": 166,
                             "message": ""
                         },
                         {
@@ -138,15 +170,23 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 165,
+                            "line": 183,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 44,
                             "durationMicroseconds": 0,
+                            "functionName": "bold",
+                            "line": 191,
+                            "message": "Cannot access value for name faslse"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 44,
+                            "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 181,
+                            "line": 207,
                             "message": "Cannot load property pressed from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/App.qml)::parent with type QQuickItem."
                         },
                         {
@@ -154,7 +194,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 186,
+                            "line": 212,
                             "message": "Cannot load property text from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/App.qml)::parent with type QQuickItem."
                         },
                         {
@@ -162,7 +202,7 @@
                             "column": 58,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 189,
+                            "line": 215,
                             "message": ""
                         },
                         {
@@ -170,7 +210,7 @@
                             "column": 56,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 190,
+                            "line": 216,
                             "message": ""
                         },
                         {
@@ -178,7 +218,7 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "closePolicy",
-                            "line": 215,
+                            "line": 242,
                             "message": "Could not find property \"closePolicy\"."
                         },
                         {
@@ -186,7 +226,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 217,
+                            "line": 244,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -194,7 +234,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "type",
-                            "line": 226,
+                            "line": 253,
                             "message": ""
                         },
                         {
@@ -202,7 +242,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "type",
-                            "line": 233,
+                            "line": 260,
                             "message": ""
                         },
                         {
@@ -210,7 +250,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 265,
+                            "line": 292,
                             "message": ""
                         },
                         {
@@ -218,7 +258,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 271,
+                            "line": 298,
                             "message": ""
                         },
                         {
@@ -226,7 +266,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "running",
-                            "line": 279,
+                            "line": 306,
                             "message": "Cannot access value for name errorDialog"
                         },
                         {
@@ -234,7 +274,7 @@
                             "column": 91,
                             "durationMicroseconds": 0,
                             "functionName": "type",
-                            "line": 280,
+                            "line": 307,
                             "message": ""
                         },
                         {
@@ -242,7 +282,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "onPaint",
-                            "line": 291,
+                            "line": 318,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
@@ -250,7 +290,23 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 287,
+                            "line": 314,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "fillMode",
+                            "line": 344,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "alignment",
+                            "line": 339,
                             "message": ""
                         },
                         {
@@ -258,7 +314,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "running",
-                            "line": 312,
+                            "line": 349,
                             "message": "Cannot access value for name errorDialog"
                         },
                         {
@@ -266,7 +322,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "type",
-                            "line": 316,
+                            "line": 353,
                             "message": ""
                         },
                         {
@@ -274,7 +330,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 323,
+                            "line": 360,
                             "message": ""
                         },
                         {
@@ -282,7 +338,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "weight",
-                            "line": 326,
+                            "line": 363,
                             "message": ""
                         },
                         {
@@ -290,7 +346,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "preferredHeight",
-                            "line": 333,
+                            "line": 370,
                             "message": "Cannot access value for name errorMessage"
                         },
                         {
@@ -298,7 +354,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 343,
+                            "line": 380,
                             "message": ""
                         },
                         {
@@ -306,7 +362,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 345,
+                            "line": 382,
                             "message": ""
                         },
                         {
@@ -314,7 +370,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 348,
+                            "line": 385,
                             "message": ""
                         },
                         {
@@ -322,7 +378,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 341,
+                            "line": 378,
                             "message": ""
                         },
                         {
@@ -330,7 +386,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 388,
+                            "line": 425,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -338,7 +394,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "scale",
-                            "line": 391,
+                            "line": 428,
                             "message": "Could not find property \"scale\"."
                         },
                         {
@@ -346,7 +402,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 356,
+                            "line": 393,
                             "message": ""
                         },
                         {
@@ -354,7 +410,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 362,
+                            "line": 399,
                             "message": "Cannot access value for name okButton"
                         },
                         {
@@ -362,7 +418,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 366,
+                            "line": 403,
                             "message": ""
                         },
                         {
@@ -370,7 +426,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 367,
+                            "line": 404,
                             "message": ""
                         },
                         {
@@ -378,7 +434,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "weight",
-                            "line": 364,
+                            "line": 401,
                             "message": ""
                         },
                         {
@@ -386,7 +442,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 372,
+                            "line": 409,
                             "message": "Cannot access value for name okButton"
                         },
                         {
@@ -394,7 +450,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "shadowColor",
-                            "line": 381,
+                            "line": 418,
                             "message": "Cannot access value for name okButton"
                         },
                         {
@@ -402,7 +458,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onCompleted",
-                            "line": 399,
+                            "line": 436,
                             "message": "Cannot access value for name parent"
                         }
                     ],
