@@ -190,6 +190,7 @@ QByteArray SuperviseurOPE::constructionJson()
 
 void SuperviseurOPE::getCaserne2() {
     QString caserneA2 = ficheUrgence->getDeuxiemeCaserne();
+    //double temps = ficheUrgence->calculerTempsTrajet();
 
     emit afficher2Caserne(caserneA2);
 }

@@ -182,14 +182,21 @@ Item {
                         cardContent: ColumnLayout {
                             anchors.fill: parent
                             anchors.margins: 16
-                            spacing: 12
+                            spacing: 7
+
+                            Text {
+                                id: renfortinfo
+                                text: "Gestion des renforts permet de déclencher une alerte pour une autre caserne proche des lieux \ndu sinistre qui interviendra en complément de celle initialement désignée."
+                                font.pixelSize: 14
+                                color: "#1f2937"
+                            }
 
                             Text {
                                 id: deuxiemeCaserneAffecte
                                 text: ""
-                                font.pixelSize: 15
-                                font.bold: faslse
-                                color: "#1f2937"
+                                font.pixelSize: 17
+                                font.bold: true
+                                color: "#10b981"
                             }
 
                             Text {

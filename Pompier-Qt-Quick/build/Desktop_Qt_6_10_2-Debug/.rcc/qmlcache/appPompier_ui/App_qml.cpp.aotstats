@@ -177,16 +177,8 @@
                             "codegenResult": 2,
                             "column": 44,
                             "durationMicroseconds": 0,
-                            "functionName": "bold",
-                            "line": 191,
-                            "message": "Cannot access value for name faslse"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 44,
-                            "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 207,
+                            "line": 214,
                             "message": "Cannot load property pressed from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/App.qml)::parent with type QQuickItem."
                         },
                         {
@@ -194,7 +186,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 212,
+                            "line": 219,
                             "message": "Cannot load property text from (component in /home/felix/Documents/projet/Pompier-Qt-Quick/ui/App.qml)::parent with type QQuickItem."
                         },
                         {
@@ -202,7 +194,7 @@
                             "column": 58,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 215,
+                            "line": 222,
                             "message": ""
                         },
                         {
@@ -210,7 +202,7 @@
                             "column": 56,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 216,
+                            "line": 223,
                             "message": ""
                         },
                         {
@@ -218,7 +210,7 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "closePolicy",
-                            "line": 242,
+                            "line": 249,
                             "message": "Could not find property \"closePolicy\"."
                         },
                         {
@@ -226,16 +218,8 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 244,
+                            "line": 251,
                             "message": "Could not find property \"width\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 30,
-                            "durationMicroseconds": 0,
-                            "functionName": "type",
-                            "line": 253,
-                            "message": ""
                         },
                         {
                             "codegenResult": 0,
@@ -247,10 +231,18 @@
                         },
                         {
                             "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "type",
+                            "line": 267,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 292,
+                            "line": 299,
                             "message": ""
                         },
                         {
@@ -258,7 +250,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 298,
+                            "line": 305,
                             "message": ""
                         },
                         {
@@ -266,7 +258,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "running",
-                            "line": 306,
+                            "line": 313,
                             "message": "Cannot access value for name errorDialog"
                         },
                         {
@@ -274,7 +266,7 @@
                             "column": 91,
                             "durationMicroseconds": 0,
                             "functionName": "type",
-                            "line": 307,
+                            "line": 314,
                             "message": ""
                         },
                         {
@@ -282,7 +274,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "onPaint",
-                            "line": 318,
+                            "line": 325,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
@@ -290,7 +282,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 314,
+                            "line": 321,
                             "message": ""
                         },
                         {
@@ -298,7 +290,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fillMode",
-                            "line": 344,
+                            "line": 351,
                             "message": ""
                         },
                         {
@@ -306,7 +298,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 339,
+                            "line": 346,
                             "message": ""
                         },
                         {
@@ -314,7 +306,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "running",
-                            "line": 349,
+                            "line": 356,
                             "message": "Cannot access value for name errorDialog"
                         },
                         {
@@ -322,7 +314,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "type",
-                            "line": 353,
+                            "line": 360,
                             "message": ""
                         },
                         {
@@ -330,7 +322,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 360,
+                            "line": 367,
                             "message": ""
                         },
                         {
@@ -338,7 +330,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "weight",
-                            "line": 363,
+                            "line": 370,
                             "message": ""
                         },
                         {
@@ -346,7 +338,7 @@
                             "column": 41,
                             "durationMicroseconds": 0,
                             "functionName": "preferredHeight",
-                            "line": 370,
+                            "line": 377,
                             "message": "Cannot access value for name errorMessage"
                         },
                         {
@@ -354,7 +346,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 380,
+                            "line": 387,
                             "message": ""
                         },
                         {
@@ -362,7 +354,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 382,
+                            "line": 389,
                             "message": ""
                         },
                         {
@@ -370,7 +362,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 385,
+                            "line": 392,
                             "message": ""
                         },
                         {
@@ -378,7 +370,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 378,
+                            "line": 385,
                             "message": ""
                         },
                         {
@@ -386,7 +378,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 425,
+                            "line": 432,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -394,7 +386,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "scale",
-                            "line": 428,
+                            "line": 435,
                             "message": "Could not find property \"scale\"."
                         },
                         {
@@ -402,7 +394,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 393,
+                            "line": 400,
                             "message": ""
                         },
                         {
@@ -410,7 +402,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 399,
+                            "line": 406,
                             "message": "Cannot access value for name okButton"
                         },
                         {
@@ -418,7 +410,7 @@
                             "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 403,
+                            "line": 410,
                             "message": ""
                         },
                         {
@@ -426,7 +418,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 404,
+                            "line": 411,
                             "message": ""
                         },
                         {
@@ -434,7 +426,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "weight",
-                            "line": 401,
+                            "line": 408,
                             "message": ""
                         },
                         {
@@ -442,7 +434,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 409,
+                            "line": 416,
                             "message": "Cannot access value for name okButton"
                         },
                         {
@@ -450,7 +442,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "shadowColor",
-                            "line": 418,
+                            "line": 425,
                             "message": "Cannot access value for name okButton"
                         },
                         {
@@ -458,7 +450,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onCompleted",
-                            "line": 436,
+                            "line": 443,
                             "message": "Cannot access value for name parent"
                         }
                     ],
