@@ -286,22 +286,6 @@
                             "message": ""
                         },
                         {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "fillMode",
-                            "line": 351,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 39,
-                            "durationMicroseconds": 0,
-                            "functionName": "alignment",
-                            "line": 346,
-                            "message": ""
-                        },
-                        {
                             "codegenResult": 2,
                             "column": 34,
                             "durationMicroseconds": 0,

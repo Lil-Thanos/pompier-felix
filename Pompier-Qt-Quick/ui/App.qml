@@ -342,14 +342,14 @@ Item {
                         ctx.stroke()
                     }
 
-                Image {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 80
-                    Layout.preferredHeight: 80
+                // Image {
+                //     Layout.alignment: Qt.AlignHCenter
+                //     Layout.preferredWidth: 80
+                //     Layout.preferredHeight: 80
 
-                    source: "qrc:/ui/icons/Felix_le_pompier_et_incendie.png"
-                    fillMode: Image.PreserveAspectFit
-                }
+                //     source: "qrc:/ui/icons/Felix_le_pompier_et_incendie.png"
+                //     fillMode: Image.PreserveAspectFit
+                // }
 
 
                     NumberAnimation on rotation {
