@@ -31,7 +31,7 @@ Rectangle {
 
                 background: Rectangle {
                     radius: 10
-                    color: tabButton.isActive ? "#dc2626" : "#ffffff"
+                    color: tabButton.isActive ? "transparent" : "#ffffff"
                     border.color: tabButton.isActive ? "#dc2626" : "#e5e7eb"
                     border.width: 2
 
@@ -63,7 +63,7 @@ Rectangle {
                         text: modelData.label
                         font.pixelSize: 15
                         font.bold: tabButton.isActive
-                        color: tabButton.isActive ? "white" : "#374151"
+                        color: tabButton.isActive ? "374151" : "#374151"
                         Layout.alignment: Qt.AlignVCenter
                     }
 
